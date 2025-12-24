@@ -1,0 +1,187 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. Jane Mwangi",
+        "title": "CEO & Founder",
+        "biography": "Seasoned FinTech entrepreneur with 15+ years of experience in digital banking and financial inclusion across East Africa. Former Head of Innovation at Equity Bank.",
+        "expertise": ["FinTech", "Business Strategy", "Financial Inclusion", "Startup Funding"],
+        "company": "TechGrowth Africa",
+        "sector": ["Finance", "Technology", "Startups"],
+        "yearsOfExperience": 15,
+        "education": [
+            "PhD in Financial Technology, University of Cape Town",
+            "MBA, Strathmore Business School",
+            "BSc Computer Science, University of Nairobi"
+        ],
+        "availability": "Weekly",
+        "meetingType": ["Video Call", "In-person (Dar es Salaam)"],
+        "languages": ["English", "Swahili", "French"],
+        "email": "jane@techgrowth.africa",
+        "phone": "+255 712 345 678",
+        "socialMedia": {
+            "linkedin": "janemwangi",
+            "twitter": "@janemwangi"
+        },
+        "areasOfMentorship": [
+            "Business Model Development",
+            "Pitch Preparation",
+            "Investor Relations",
+            "Market Entry Strategy"
+        ],
+        "startupsMentored": 32,
+        "successStories": [
+            "Helped secure $2M funding for PayGo Energy",
+            "Mentored 5 startups into YC and Techstars"
+        ],
+        "profileImage": "images/mentors/jane-mwangi.jpg",
+        "joinedDate": "2022-01-15",
+        "rating": 4.9,
+        "reviews": 28,
+        "isFeatured": true
+    },
+    {
+        "id": 2,
+        "name": "Prof. Ahmed Hassan",
+        "title": "Professor of Computer Science",
+        "biography": "Leading AI researcher with over 20 years of experience in machine learning applications for African contexts. Published author and recipient of the African Innovation Award 2021.",
+        "expertise": ["Artificial Intelligence", "Machine Learning", "Data Science", "Research Commercialization"],
+        "company": "UDSM College of ICT",
+        "sector": ["Education", "Research", "Technology"],
+        "yearsOfExperience": 22,
+        "education": [
+            "PhD in Computer Science, University of Manchester",
+            "MSc in AI, University of Cape Town",
+            "BSc in Computer Engineering, UDSM"
+        ],
+        "availability": "Bi-weekly",
+        "meetingType": ["Video Call", "In-person (UDSM Campus)"],
+        "languages": ["English", "Swahili", "Arabic"],
+        "email": "ahmed.hassan@udsm.ac.tz",
+        "phone": "+255 754 123 456",
+        "socialMedia": {
+            "linkedin": "profahmedhassan",
+            "googleScholar": "c/AhmedHassan",
+            "researchGate": "Ahmed_Hassan"
+        },
+        "areasOfMentorship": [
+            "AI/ML Technical Guidance",
+            "Research Paper Writing",
+            "Prototype Development",
+            "Grant Writing"
+        ],
+        "startupsMentored": 18,
+        "successStories": [
+            "Co-founded AI4D Africa Research Lab",
+            "Led development of Swahili NLP toolkit"
+        ],
+        "profileImage": "images/mentors/ahmed-hassan.jpg",
+        "joinedDate": "2021-08-10",
+        "rating": 4.8,
+        "reviews": 19,
+        "isFeatured": true
+    },
+    {
+        "id": 3,
+        "name": "Sarah Johnson",
+        "title": "Marketing Director",
+        "biography": "Award-winning marketing strategist with expertise in digital marketing and brand development across African markets. Former Head of Marketing at Jumia Tanzania.",
+        "expertise": ["Digital Marketing", "Brand Strategy", "E-commerce", "Growth Hacking"],
+        "company": "BrandVista Africa",
+        "sector": ["Marketing", "E-commerce", "Retail"],
+        "yearsOfExperience": 12,
+        "education": [
+            "MSc in Digital Marketing, University of Cape Town",
+            "BBA in Marketing, University of Dar es Salaam"
+        ],
+        "availability": "Weekly",
+        "meetingType": ["Video Call", "In-person (Dar es Salaam)"],
+        "languages": ["English", "Swahili"],
+        "email": "sarah@brandvista.africa",
+        "socialMedia": {
+            "linkedin": "sarahjohnsonmktg",
+            "twitter": "@sarahj_marketing"
+        },
+        "areasOfMentorship": [
+            "Go-to-Market Strategy",
+            "Social Media Marketing",
+            "Customer Acquisition",
+            "Brand Positioning"
+        ],
+        "startupsMentored": 24,
+        "profileImage": "images/mentors/sarah-johnson.jpg",
+        "joinedDate": "2022-03-22",
+        "rating": 4.7,
+        "reviews": 15
+    },
+    {
+        "id": 4,
+        "name": "Michael Ofori",
+        "title": "Investment Partner",
+        "biography": "Venture capitalist with a focus on early-stage African tech startups. Managing Partner at Savannah Ventures, a $50M fund investing in East African startups.",
+        "expertise": ["Venture Capital", "Startup Funding", "Pitching", "Financial Modeling"],
+        "company": "Savannah Ventures",
+        "sector": ["Venture Capital", "Finance", "Startups"],
+        "yearsOfExperience": 18,
+        "education": [
+            "MBA, Harvard Business School",
+            "BSc Economics, University of Ghana"
+        ],
+        "availability": "Monthly",
+        "meetingType": ["Video Call"],
+        "languages": ["English", "Twi", "French"],
+        "email": "michael@savannah.vc",
+        "socialMedia": {
+            "linkedin": "michaelfori",
+            "twitter": "@mikeofori_vc"
+        },
+        "areasOfMentorship": [
+            "Fundraising Strategy",
+            "Pitch Deck Review",
+            "Term Sheet Negotiation",
+            "Investor Relations"
+        ],
+        "startupsMentored": 45,
+        "successStories": [
+            "Led $15M Series A in Paystack",
+            "Exited 3 startups with 10x+ returns"
+        ],
+        "profileImage": "images/mentors/michael-ofori.jpg",
+        "joinedDate": "2021-11-05",
+        "rating": 4.9,
+        "reviews": 32,
+        "isFeatured": true
+    },
+    {
+        "id": 5,
+        "name": "Amina Rajab",
+        "title": "Product Manager",
+        "biography": "Product leader with experience at Google and various African tech startups. Specializes in building user-centered digital products for emerging markets.",
+        "expertise": ["Product Management", "UX/UI Design", "Agile Development", "User Research"],
+        "company": "Andela",
+        "sector": ["Technology", "Product Development", "UX/UI Design"],
+        "yearsOfExperience": 9,
+        "education": [
+            "MSc Human-Computer Interaction, University College London",
+            "BSc Computer Science, University of Nairobi"
+        ],
+        "availability": "Bi-weekly",
+        "meetingType": ["Video Call", "In-person (Nairobi)"],
+        "languages": ["English", "Swahili", "Arabic"],
+        "email": "amina.rajab@andela.com",
+        "socialMedia": {
+            "linkedin": "aminarajab",
+            "twitter": "@aminarajabpm"
+        },
+        "areasOfMentorship": [
+            "Product Roadmapping",
+            "User Experience Design",
+            "Agile Development",
+            "MVP Development"
+        ],
+        "startupsMentored": 21,
+        "profileImage": "images/mentors/amina-rajab.jpg",
+        "joinedDate": "2022-02-18",
+        "rating": 4.8,
+        "reviews": 17
+    }
+]
