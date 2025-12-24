@@ -1,0 +1,172 @@
+[
+    {
+        "id": 1,
+        "name": "AgriTech Tanzania",
+        "tagline": "Empowering Farmers with Smart Technology",
+        "description": "IoT solutions for small-scale farmers including soil sensors, weather stations, and mobile app for crop management. Our mission is to increase agricultural productivity through technology.",
+        "sector": "Agriculture",
+        "foundingYear": 2023,
+        "founders": 3,
+        "teamSize": 8,
+        "funding": 50000000,
+        "fundingStage": "Seed",
+        "revenue": 12000000,
+        "customers": 150,
+        "logo": "🌱",
+        "coverImage": "images/startups/agritech-cover.jpg",
+        "website": "https://agritechtz.co.tz",
+        "status": "active",
+        "highlights": [
+            "Won 1st place at UDSM Innovation Challenge 2023",
+            "Featured in Tanzania Tech Magazine",
+            "Partnered with 5 local farming cooperatives"
+        ],
+        "technologies": ["IoT", "Mobile App", "Cloud Computing"],
+        "socialMedia": {
+            "twitter": "@AgriTechTZ",
+            "linkedin": "company/agritech-tanzania",
+            "instagram": "agritechtz"
+        },
+        "impact": {
+            "jobsCreated": 5,
+            "farmersImpacted": 120,
+            "yieldIncrease": "35%"
+        }
+    },
+    {
+        "id": 2,
+        "name": "EduLearn Platform",
+        "tagline": "Quality Education for Every Student",
+        "description": "Online tutoring platform connecting secondary school students with qualified tutors for personalized learning experiences. Our AI-powered system adapts to each student's learning style.",
+        "sector": "EdTech",
+        "foundingYear": 2022,
+        "founders": 4,
+        "teamSize": 12,
+        "funding": 30000000,
+        "fundingStage": "Pre-seed",
+        "revenue": 8000000,
+        "customers": 320,
+        "logo": "💻",
+        "coverImage": "images/startups/edulearn-cover.jpg",
+        "website": "https://edulearn.co.tz",
+        "status": "active",
+        "highlights": [
+            "Featured on national television",
+            "Partnered with 10+ schools in Dar es Salaam",
+            "95% student satisfaction rate"
+        ],
+        "technologies": ["React", "Node.js", "MongoDB", "AI/ML"],
+        "socialMedia": {
+            "twitter": "@EduLearnTZ",
+            "facebook": "EduLearnTanzania",
+            "instagram": "edulearntz"
+        },
+        "impact": {
+            "studentsReached": 500,
+            "examPassRateImprovement": "42%",
+            "tutorsOnPlatform": 45
+        }
+    },
+    {
+        "id": 3,
+        "name": "MamaShopper",
+        "tagline": "Empowering Local Artisans, One Stitch at a Time",
+        "description": "E-commerce platform connecting local artisans with global customers. We provide training, materials, and market access to talented craftsmen and women across Tanzania.",
+        "sector": "E-commerce",
+        "foundingYear": 2023,
+        "founders": 2,
+        "teamSize": 6,
+        "funding": 20000000,
+        "fundingStage": "Pre-seed",
+        "revenue": 5000000,
+        "customers": 210,
+        "logo": "🛒",
+        "coverImage": "images/startups/mamashopper-cover.jpg",
+        "website": "https://mamashopper.co.tz",
+        "status": "active",
+        "highlights": [
+            "Featured in Forbes Africa",
+            "500+ products listed",
+            "Operates in 3 regions"
+        ],
+        "technologies": ["React", "Express", "PostgreSQL", "Stripe"],
+        "socialMedia": {
+            "instagram": "mamashoppertz",
+            "facebook": "MamaShopperTZ",
+            "pinterest": "mamashoppertz"
+        },
+        "impact": {
+            "artisansSupported": 85,
+            "womenEmpowered": 65,
+            "averageIncomeIncrease": "60%"
+        }
+    },
+    {
+        "id": 4,
+        "name": "MediQuick",
+        "tagline": "Healthcare at Your Fingertips",
+        "description": "On-demand healthcare service connecting patients with doctors via video consultation. We also provide medicine delivery and lab test bookings.",
+        "sector": "HealthTech",
+        "foundingYear": 2023,
+        "founders": 3,
+        "teamSize": 9,
+        "funding": 45000000,
+        "fundingStage": "Seed",
+        "revenue": 15000000,
+        "customers": 420,
+        "logo": "🏥",
+        "coverImage": "images/startups/mediquick-cover.jpg",
+        "website": "https://mediquick.co.tz",
+        "status": "active",
+        "highlights": [
+            "Partnered with 5 major hospitals",
+            "24/7 customer support",
+            "95% consultation success rate"
+        ],
+        "technologies": ["Flutter", "Firebase", "Node.js", "Twilio"],
+        "socialMedia": {
+            "twitter": "@MediQuickTZ",
+            "facebook": "MediQuickTZ",
+            "instagram": "mediquicktz"
+        },
+        "impact": {
+            "patientsServed": 1200,
+            "ruralAreasReached": 8,
+            "avgWaitTimeReduction": "85%"
+        }
+    },
+    {
+        "id": 5,
+        "name": "SolarTZ",
+        "tagline": "Powering Tanzania's Future with Clean Energy",
+        "description": "Affordable solar energy solutions for homes and businesses in off-grid and underserved communities. We provide solar panel installations and pay-as-you-go energy solutions.",
+        "sector": "Clean Energy",
+        "foundingYear": 2022,
+        "founders": 2,
+        "teamSize": 15,
+        "funding": 75000000,
+        "fundingStage": "Series A",
+        "revenue": 28000000,
+        "customers": 650,
+        "logo": "☀️",
+        "coverImage": "images/startups/solartz-cover.jpg",
+        "website": "https://solartz.co.tz",
+        "status": "active",
+        "highlights": [
+            "Awarded Best Green Startup 2023",
+            "Installed 1.2MW of solar capacity",
+            "Operating in 4 regions"
+        ],
+        "technologies": ["IoT", "Mobile Money", "Cloud Monitoring"],
+        "socialMedia": {
+            "twitter": "@SolarTZ",
+            "linkedin": "company/solartz",
+            "instagram": "solartanzania"
+        },
+        "impact": {
+            "homesPowered": 1200,
+            "co2Reduction": "450 tons",
+            "jobsCreated": 12
+        }
+    }
+]
