@@ -51,18 +51,18 @@ Thank you for your interest in contributing to the UDSM Startup Incubator Portal
 
 ## 📄 Page Assignments
 
-| Page | Assigned To | Status |
-|------|------------|--------|
-| Home Page | [Lead Developer] | ✅ Completed |
-| Pitch Page | [Member 1 Name] | ⏳ In Progress |
-| Mentorship Page | [Member 2 Name] | 📝 To Do |
-| Funding Page | [Member 3 Name] | 📝 To Do |
-| Success Stories | [Member 4 Name] | 📝 To Do |
-| Workshops | [Member 5 Name] | 📝 To Do |
-| Co-working Spaces | [Member 6 Name] | 📝 To Do |
-| Legal Guidance | [Member 7 Name] | 📝 To Do |
-| Market Research | [Member 8 Name] | 📝 To Do |
-| Investors | [Member 9 Name] | 📝 To Do |
+| Page | Assigned To | Status | Branch |
+|------|------------|--------|--------|
+| Home Page | John Ruhumbika Mtumba (Lead) | ✅ Completed | `master` |
+| Pitch Page | Timothy Amani | 📝 To Do | `feature-timothy-pitch-page` |
+| Mentorship Page | Rahel Msendo | 📝 To Do | `feature-rahel-mentorship-page` |
+| Funding Page | Baraka Mugisha John | 📝 To Do | `feature-baraka-funding-page` |
+| Success Stories | Jaqueline Enock | 📝 To Do | `feature-jaqueline-stories-page` |
+| Workshops | Emmanuel Daniel Juma | 📝 To Do | `feature-emmanuel-workshops-page` |
+| Co-working Spaces | Bihindu Adam | 📝 To Do | `feature-bihindu-spaces-page` |
+| Legal Guidance | Andrew Asson Malisa | 📝 To Do | `feature-andrew-legal-page` |
+| Market Research | Samson Sostenes Masatu | 📝 To Do | `feature-samson-research-page` |
+| Investors | Elisha Jeremiah Kulwa | 📝 To Do | `feature-elisha-investors-page` |
 
 ## 🎨 Code Style Guidelines
 
