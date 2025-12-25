@@ -131,7 +131,7 @@ git merge main
    ```
 3. Add upstream remote:
    ```bash
-   git remote add upstream https://github.com/original-owner/udsm-startup-incubator.git
+   git remote add upstream https://github.com/Ruhumbika/udsm-startup-incubator.git
    ```
 4. Sync your fork:
    ```bash
@@ -205,4 +205,4 @@ git clean -f  # Remove untracked files
 - [Conventional Commits](https://www.conventionalcommits.org/)
 
 ---
-*Last Updated: December 24, 2025*
+*Last Updated: December 25, 2025*

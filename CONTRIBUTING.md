@@ -254,12 +254,12 @@ Closes #32
 ## 📞 Contact
 
 For any questions or clarifications, please contact:
-- Project Lead: [Name] - [email@example.com]
-- Technical Lead: [Name] - [email@example.com]
+- Project Lead: JOHN, RUHUMBIKA MTUMBA - ruhumbikamtumbajohn@gmail.com
+- Technical Lead: Andrew Asson Malissa - andreaasson95@gmail.com
 
 ## 🙏 Thank You!
 
 Your contributions help make the UDSM Startup Incubator Portal better for everyone. Thank you for your time and effort!
 
 ---
-*Last Updated: December 24, 2025*
+*Last Updated: December 25, 2025*
