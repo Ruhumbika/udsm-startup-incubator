@@ -1066,3 +1066,1071 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Your Idea | UDSM Startup Incubator</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/pitch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <style>
+        :root {
+            --pitch-primary: #0A2463;
+            --pitch-accent: #00C2D1;
+            --pitch-success: #10B981;
+            --pitch-warning: #F59E0B;
+            --pitch-gradient: linear-gradient(135deg, #0A2463 0%, #00C2D1 100%);
+            --pitch-light: #F8FAFC;
+            --pitch-card-bg: rgba(255, 255, 255, 0.95);
+            --pitch-shadow: 0 20px 40px rgba(10, 36, 99, 0.1);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Navigation -->
+    <header class="pitch-header">
+        <div class="container">
+            <nav class="pitch-nav">
+                <div class="nav-brand">
+                    <a href="../index.html" class="brand-link">
+                        <i class="fas fa-rocket"></i>
+                        <span class="brand-text">
+                            <strong>UDSM</strong>INNOVATE
+                        </span>
+                    </a>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="pitch.html" class="nav-active">Pitch</a></li>
+                    <li><a href="mentorship.html">Mentors</a></li>
+                    <li><a href="funding.html">Funding</a></li>
+                    <li><a href="spaces.html">Spaces</a></li>
+                    <li><a href="#success-stories" class="nav-cta">Success Stories</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-text">
+                        <i class="fas fa-user"></i> Sign In
+                    </a>
+                    <a href="#submit-pitch" class="btn-gradient">
+                        <i class="fas fa-paper-plane"></i> Submit Idea
+                    </a>
+                </div>
+                
+                <button class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="pitch-hero">
+        <div class="hero-video-overlay"></div>
+        <div class="hero-gradient"></div>
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+             alt="Innovation background" 
+             class="hero-background">
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge animate-float">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Pitch Portal Open</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Turn Your <span class="gradient-text">Vision</span> Into 
+                    <span class="highlight">Reality</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Join 200+ founders who launched their startups through UDSM's premier incubation program.
+                    Get funding, mentorship, and resources to build Tanzania's next unicorn.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15.2">0</div>
+                        <div class="stat-label">Million USD Raised</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="42">0</div>
+                        <div class="stat-label">Startups Funded</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="7">0</div>
+                        <div class="stat-label">Days Average Response</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#pitch-form" class="btn-primary btn-glow">
+                        <i class="fas fa-file-upload"></i> Start Your Pitch
+                    </a>
+                    <a href="#how-it-works" class="btn-outline">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Carousel -->
+    <section class="success-stories" id="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    From <span class="gradient-text">Pitch</span> to 
+                    <span class="highlight">Profit</span>
+                </h2>
+                <p class="section-subtitle">
+                    See how our alumni transformed ideas into successful businesses
+                </p>
+            </div>
+            
+            <div class="stories-carousel">
+                <div class="story-slide">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="AgriTech success">
+                            <div class="story-overlay">
+                                <div class="overlay-content">
+                                    <span class="funding-badge">$2.5M Raised</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <h3>AgriTech Solutions</h3>
+                            <p class="story-excerpt">
+                                IoT-powered farming platform serving 5,000+ Tanzanian farmers
+                            </p>
+                            <div class="story-meta">
+                                <span><i class="fas fa-user-graduate"></i> Computer Science Alumni</span>
+                                <span><i class="fas fa-calendar"></i> 2022 Cohort</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-slide">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="HealthTech success">
+                            <div class="story-overlay">
+                                <div class="overlay-content">
+                                    <span class="funding-badge">$1.8M Raised</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <h3>MediConnect Tanzania</h3>
+                            <p class="story-excerpt">
+                                Telemedicine platform connecting rural patients with specialists
+                            </p>
+                            <div class="story-meta">
+                                <span><i class="fas fa-user-graduate"></i> Medical School Alumni</span>
+                                <span><i class="fas fa-calendar"></i> 2023 Cohort</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">
+                    Your <span class="gradient-text">Journey</span> Starts Here
+                </h2>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Submit Your Pitch</h3>
+                        <p>Fill out our comprehensive application form with your business idea</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="step-number">2</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Expert Review</h3>
+                        <p>Our panel of investors and industry experts evaluate your submission</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="step-number">3</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Pitch Session</h3>
+                        <p>Present your idea to our investment committee (in-person or virtual)</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="step-number">4</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Incubation Offer</h3>
+                        <p>Receive funding, mentorship, and resources to launch your startup</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pitch Form -->
+    <section class="pitch-form-section" id="pitch-form">
+        <div class="container">
+            <div class="form-header">
+                <h2 class="section-title">
+                    Submit Your <span class="gradient-text">Pitch</span>
+                </h2>
+                <p class="section-subtitle">
+                    Complete all sections for the best chance of selection
+                </p>
+                <div class="form-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="formProgress"></div>
+                    </div>
+                    <span class="progress-text">Form Progress: <span id="progressPercent">0%</span></span>
+                </div>
+            </div>
+            
+            <form id="pitchForm" class="pitch-form" enctype="multipart/form-data">
+                <!-- Form Steps Navigation -->
+                <div class="form-steps">
+                    <button type="button" class="step-nav active" data-step="1">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Founder Info</span>
+                    </button>
+                    <button type="button" class="step-nav" data-step="2">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Idea Details</span>
+                    </button>
+                    <button type="button" class="step-nav" data-step="3">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Business Model</span>
+                    </button>
+                    <button type="button" class="step-nav" data-step="4">
+                        <span class="step-number">4</span>
+                        <span class="step-label">Documents</span>
+                    </button>
+                </div>
+                
+                <!-- Step 1: Founder Information -->
+                <div class="form-step active" id="step1">
+                    <div class="step-header">
+                        <h3><i class="fas fa-user-tie"></i> Founder Information</h3>
+                        <p class="step-description">Tell us about yourself and your team</p>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">
+                                <i class="fas fa-user"></i> Full Name *
+                            </label>
+                            <input type="text" 
+                                   id="fullName" 
+                                   name="fullName" 
+                                   placeholder="Enter your full name"
+                                   required
+                                   data-validate="name">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email Address *
+                            </label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   placeholder="student@udsm.ac.tz"
+                                   required
+                                   data-validate="email">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone Number *
+                            </label>
+                            <div class="phone-input">
+                                <select id="countryCode" name="countryCode">
+                                    <option value="+255">TZ +255</option>
+                                    <option value="+1">US +1</option>
+                                    <option value="+44">UK +44</option>
+                                </select>
+                                <input type="tel" 
+                                       id="phone" 
+                                       name="phone"
+                                       placeholder="XXX XXX XXX"
+                                       required
+                                       data-validate="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn Profile
+                            </label>
+                            <input type="url" 
+                                   id="linkedin" 
+                                   name="linkedin"
+                                   placeholder="https://linkedin.com/in/yourprofile">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="teamSize">
+                            <i class="fas fa-users"></i> Team Size *
+                        </label>
+                        <div class="range-slider-container">
+                            <input type="range" 
+                                   id="teamSize" 
+                                   name="teamSize"
+                                   min="1" 
+                                   max="10" 
+                                   value="1">
+                            <div class="range-labels">
+                                <span>Solo Founder</span>
+                                <span id="teamSizeValue">1 member</span>
+                                <span>10+ Team</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-actions">
+                        <button type="button" class="btn-next" data-next="2">
+                            Next: Idea Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Idea Details -->
+                <div class="form-step" id="step2">
+                    <div class="step-header">
+                        <h3><i class="fas fa-lightbulb"></i> Idea Details</h3>
+                        <p class="step-description">Describe your innovative solution</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ideaTitle">
+                            <i class="fas fa-heading"></i> Idea Title *
+                        </label>
+                        <input type="text" 
+                               id="ideaTitle" 
+                               name="ideaTitle"
+                               placeholder="Give your idea a compelling name"
+                               required>
+                        <div class="input-tip">Make it memorable and descriptive</div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="category">
+                                <i class="fas fa-tags"></i> Category *
+                            </label>
+                            <select id="category" name="category" class="styled-select" required>
+                                <option value="">Select industry</option>
+                                <option value="fintech">FinTech & Digital Payments</option>
+                                <option value="agritech">AgriTech & Food Security</option>
+                                <option value="healthtech">HealthTech & MedTech</option>
+                                <option value="edtech">EdTech & E-Learning</option>
+                                <option value="cleantech">CleanTech & Renewable Energy</option>
+                                <option value="ecommerce">E-commerce & Retail Tech</option>
+                                <option value="saas">SaaS & Enterprise Software</option>
+                                <option value="other">Other Innovation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="stage">
+                                <i class="fas fa-chart-line"></i> Development Stage *
+                            </label>
+                            <select id="stage" name="stage" class="styled-select" required>
+                                <option value="">Select current stage</option>
+                                <option value="idea">Idea / Concept</option>
+                                <option value="prototype">Prototype / MVP</option>
+                                <option value="pilot">Pilot Testing</option>
+                                <option value="revenue">Early Revenue</option>
+                                <option value="scaling">Growth & Scaling</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="problem">
+                            <i class="fas fa-exclamation-triangle"></i> Problem Statement *
+                        </label>
+                        <textarea id="problem" 
+                                  name="problem"
+                                  rows="4"
+                                  placeholder="What problem are you solving? Who experiences this problem?"
+                                  required></textarea>
+                        <div class="char-counter">
+                            <span id="problemChars">0</span> / 500 characters
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="solution">
+                            <i class="fas fa-check-circle"></i> Your Solution *
+                        </label>
+                        <textarea id="solution" 
+                                  name="solution"
+                                  rows="4"
+                                  placeholder="How does your solution work? Why is it better than existing alternatives?"
+                                  required></textarea>
+                        <div class="char-counter">
+                            <span id="solutionChars">0</span> / 500 characters
+                        </div>
+                    </div>
+                    
+                    <div class="step-actions">
+                        <button type="button" class="btn-prev" data-prev="1">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+                        <button type="button" class="btn-next" data-next="3">
+                            Next: Business Model <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Business Model -->
+                <div class="form-step" id="step3">
+                    <div class="step-header">
+                        <h3><i class="fas fa-chart-bar"></i> Business Model</h3>
+                        <p class="step-description">How will you create, deliver, and capture value?</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="targetMarket">
+                            <i class="fas fa-bullseye"></i> Target Market *
+                        </label>
+                        <textarea id="targetMarket" 
+                                  name="targetMarket"
+                                  rows="3"
+                                  placeholder="Who are your target customers? What's your Total Addressable Market (TAM)?"
+                                  required></textarea>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="revenueModel">
+                                <i class="fas fa-money-bill-wave"></i> Revenue Model *
+                            </label>
+                            <select id="revenueModel" name="revenueModel" class="styled-select" required>
+                                <option value="">Select revenue model</option>
+                                <option value="subscription">Subscription / SaaS</option>
+                                <option value="transaction">Transaction Fees</option>
+                                <option value="advertising">Advertising</option>
+                                <option value="commission">Commission / Marketplace</option>
+                                <option value="product-sales">Product Sales</option>
+                                <option value="licensing">Licensing</option>
+                                <option value="hybrid">Hybrid Model</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fundingAsk">
+                                <i class="fas fa-hand-holding-usd"></i> Funding Request *
+                            </label>
+                            <div class="currency-input">
+                                <span class="currency-symbol">TZS</span>
+                                <input type="number" 
+                                       id="fundingAsk" 
+                                       name="fundingAsk"
+                                       min="0"
+                                       step="100000"
+                                       placeholder="Amount needed"
+                                       required>
+                            </div>
+                            <div class="input-tip">Minimum investment: TZS 5,000,000</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="competition">
+                            <i class="fas fa-chess-knight"></i> Competitive Analysis
+                        </label>
+                        <textarea id="competition" 
+                                  name="competition"
+                                  rows="3"
+                                  placeholder="Who are your main competitors? What's your competitive advantage?"></textarea>
+                    </div>
+                    
+                    <div class="step-actions">
+                        <button type="button" class="btn-prev" data-prev="2">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+                        <button type="button" class="btn-next" data-next="4">
+                            Next: Documents <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Documents -->
+                <div class="form-step" id="step4">
+                    <div class="step-header">
+                        <h3><i class="fas fa-file-upload"></i> Supporting Documents</h3>
+                        <p class="step-description">Upload your pitch materials</p>
+                    </div>
+                    
+                    <div class="upload-section">
+                        <div class="upload-card required">
+                            <div class="upload-header">
+                                <i class="fas fa-file-powerpoint"></i>
+                                <div>
+                                    <h4>Pitch Deck *</h4>
+                                    <p>PDF or PowerPoint (Max 10MB)</p>
+                                </div>
+                            </div>
+                            <div class="upload-area" id="pitchDeckArea">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag & drop or <span class="browse-link">browse</span></p>
+                                <input type="file" 
+                                       id="pitchDeck" 
+                                       name="pitchDeck"
+                                       accept=".pdf,.ppt,.pptx"
+                                       required>
+                            </div>
+                            <div class="file-preview" id="pitchDeckPreview"></div>
+                        </div>
+                        
+                        <div class="upload-card">
+                            <div class="upload-header">
+                                <i class="fas fa-video"></i>
+                                <div>
+                                    <h4>Pitch Video (Optional)</h4>
+                                    <p>2-3 minute elevator pitch (MP4, Max 100MB)</p>
+                                </div>
+                            </div>
+                            <div class="upload-area" id="pitchVideoArea">
+                                <i class="fas fa-video"></i>
+                                <p>Upload your pitch video</p>
+                                <input type="file" 
+                                       id="pitchVideo" 
+                                       name="pitchVideo"
+                                       accept="video/*">
+                            </div>
+                        </div>
+                        
+                        <div class="upload-card">
+                            <div class="upload-header">
+                                <i class="fas fa-file-alt"></i>
+                                <div>
+                                    <h4>Additional Documents</h4>
+                                    <p>Financial projections, market research, etc.</p>
+                                </div>
+                            </div>
+                            <div class="file-list" id="additionalFilesList">
+                                <div class="empty-state">
+                                    <i class="fas fa-file-import"></i>
+                                    <p>No files added</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-add-file" id="addFilesBtn">
+                                <i class="fas fa-plus"></i> Add Files
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">
+                                    I agree to the <a href="#" class="link">Terms & Conditions</a> and confirm this is my original work
+                                </label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">
+                                    I consent to the <a href="#" class="link">Privacy Policy</a> and understand how my data will be used
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="final-actions">
+                        <button type="button" class="btn-prev" data-prev="3">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+                        <button type="submit" class="btn-submit btn-glow">
+                            <i class="fas fa-paper-plane"></i> Submit Pitch
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="form-support">
+                <div class="support-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h4>Need Help?</h4>
+                    <p>Contact our support team or download our pitch template</p>
+                    <div class="support-links">
+                        <a href="#" class="btn-text">
+                            <i class="fas fa-download"></i> Template
+                        </a>
+                        <a href="mailto:pitch-support@udsm.ac.tz" class="btn-text">
+                            <i class="fas fa-envelope"></i> Email Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="pitch-faq">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens after I submit my pitch?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our review committee will evaluate your submission within 7 days. If shortlisted, you'll be invited for a pitch session with our investment team. Successful applicants receive term sheets within 14 days of their presentation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What funding amounts are available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer seed funding ranging from TZS 5M to TZS 50M, depending on the stage and needs of your startup. Additional follow-on funding is available for promising ventures that meet their milestones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need to be a UDSM student?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While we prioritize UDSM students and alumni, we accept applications from all Tanzanian founders. However, UDSM affiliates receive additional benefits and preferential consideration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="pitch-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Ready to Launch Your Startup?</h2>
+                    <p>Join our community of innovators and get the support you need to succeed</p>
+                    <div class="cta-stats">
+                        <div class="stat">
+                            <div class="stat-number">85%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Startups Supported</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="#pitch-form" class="btn-primary btn-large">
+                        <i class="fas fa-rocket"></i> Start Your Application
+                    </a>
+                    <a href="schedule.html" class="btn-outline">
+                        <i class="fas fa-calendar"></i> Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="pitch-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>UDSM Startup Incubator</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Empowering Tanzania's next generation of innovators
+                    </p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> pitch@udsm-incubator.ac.tz</p>
+                        <p><i class="fas fa-phone"></i> +255 22 241 0500 ext. 1234</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Innovation Hub, UDSM Main Campus</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mentorship.html">Find a Mentor</a></li>
+                        <li><a href="funding.html">Funding Opportunities</a></li>
+                        <li><a href="spaces.html">Co-working Spaces</a></li>
+                        <li><a href="workshops.html">Workshops & Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Pitch Template</a></li>
+                        <li><a href="#">Business Plan Guide</a></li>
+                        <li><a href="#">Market Research Tools</a></li>
+                        <li><a href="#">Legal Templates</a></li>
+                        <li><a href="#">Investor Directory</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <p>Subscribe for updates</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 UDSM Startup Incubator. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Pitch Submitted Successfully!</h2>
+                <p class="modal-message">
+                    Thank you for submitting your startup idea. Our review team will evaluate your 
+                    submission and get back to you within <strong>5-7 business days</strong>.
+                </p>
+                <div class="modal-actions">
+                    <button class="btn-primary" id="viewDashboard">
+                        <i class="fas fa-tachometer-alt"></i> View Dashboard
+                    </button>
+                    <button class="btn-outline" id="submitAnother">
+                        <i class="fas fa-plus"></i> Submit Another Idea
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/pitch.js"></script>
+    <script src="../js/pitch-form.js"></script>
+    <script>
+        // Initialize animations and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate counting numbers
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = current >= target ? target.toFixed(target % 1 === 0 ? 0 : 1) : current.toFixed(1);
+                        setTimeout(updateCounter, 20);
+                    }
+                };
+                
+                // Start counter when in viewport
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                observer.observe(counter);
+            });
+
+            // Form step navigation
+            const formSteps = document.querySelectorAll('.form-step');
+            const stepNavs = document.querySelectorAll('.step-nav');
+            const progressBar = document.getElementById('formProgress');
+            const progressText = document.getElementById('progressPercent');
+            
+            function updateProgress() {
+                const currentStep = document.querySelector('.form-step.active');
+                const stepIndex = Array.from(formSteps).indexOf(currentStep) + 1;
+                const progress = (stepIndex / formSteps.length) * 100;
+                
+                progressBar.style.width = `${progress}%`;
+                progressText.textContent = `${Math.round(progress)}%`;
+            }
+            
+            stepNavs.forEach(nav => {
+                nav.addEventListener('click', function() {
+                    const step = this.getAttribute('data-step');
+                    
+                    // Update active states
+                    stepNavs.forEach(n => n.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    formSteps.forEach(s => s.classList.remove('active'));
+                    document.getElementById(`step${step}`).classList.add('active');
+                    
+                    updateProgress();
+                });
+            });
+            
+            // Next/Prev buttons
+            document.querySelectorAll('.btn-next').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const nextStep = this.getAttribute('data-next');
+                    const currentNav = document.querySelector(`.step-nav[data-step="${nextStep}"]`);
+                    currentNav.click();
+                });
+            });
+            
+            document.querySelectorAll('.btn-prev').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const prevStep = this.getAttribute('data-prev');
+                    const currentNav = document.querySelector(`.step-nav[data-step="${prevStep}"]`);
+                    currentNav.click();
+                });
+            });
+            
+            // File upload previews
+            const fileInputs = document.querySelectorAll('input[type="file"]');
+            fileInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    const previewId = this.id + 'Preview';
+                    const previewElement = document.getElementById(previewId);
+                    
+                    if (this.files.length > 0 && previewElement) {
+                        previewElement.innerHTML = `
+                            <div class="file-info">
+                                <i class="fas fa-file"></i>
+                                <div>
+                                    <strong>${this.files[0].name}</strong>
+                                    <span>${(this.files[0].size / 1024 / 1024).toFixed(2)} MB</span>
+                                </div>
+                                <button type="button" class="remove-file">&times;</button>
+                            </div>
+                        `;
+                        
+                        // Add remove functionality
+                        previewElement.querySelector('.remove-file').addEventListener('click', () => {
+                            this.value = '';
+                            previewElement.innerHTML = '';
+                        });
+                    }
+                });
+            });
+            
+            // Character counters
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach(textarea => {
+                const counterId = textarea.id + 'Chars';
+                const counter = document.getElementById(counterId);
+                
+                if (counter) {
+                    textarea.addEventListener('input', function() {
+                        counter.textContent = this.value.length;
+                    });
+                }
+            });
+            
+            // Team size slider
+            const teamSlider = document.getElementById('teamSize');
+            const teamValue = document.getElementById('teamSizeValue');
+            
+            if (teamSlider && teamValue) {
+                teamSlider.addEventListener('input', function() {
+                    const value = this.value;
+                    teamValue.textContent = value === '1' ? 'Solo Founder' : `${value} members`;
+                });
+            }
+            
+            // FAQ accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const answer = this.nextElementSibling;
+                    
+                    if (this.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        answer.style.maxHeight = '0';
+                    }
+                });
+            });
+            
+            // Mobile menu toggle
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+            }
+            
+            // Form submission
+            const pitchForm = document.getElementById('pitchForm');
+            const successModal = document.getElementById('successModal');
+            
+            if (pitchForm) {
+                pitchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Validate form
+                    const isValid = validateForm();
+                    
+                    if (isValid) {
+                        // Show loading state
+                        const submitBtn = this.querySelector('.btn-submit');
+                        const originalText = submitBtn.innerHTML;
+                        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                        submitBtn.disabled = true;
+                        
+                        // Simulate API call
+                        setTimeout(() => {
+                            // Reset form
+                            this.reset();
+                            
+                            // Reset all steps to step 1
+                            document.querySelector('.step-nav[data-step="1"]').click();
+                            
+                            // Reset progress
+                            progressBar.style.width = '0%';
+                            progressText.textContent = '0%';
+                            
+                            // Show success modal
+                            successModal.classList.add('active');
+                            
+                            // Reset submit button
+                            submitBtn.innerHTML = originalText;
+                            submitBtn.disabled = false;
+                        }, 2000);
+                    }
+                });
+            }
+            
+            // Modal close functionality
+            const modalClose = document.querySelector('.modal-close');
+            const submitAnother = document.getElementById('submitAnother');
+            
+            if (modalClose) {
+                modalClose.addEventListener('click', () => {
+                    successModal.classList.remove('active');
+                });
+            }
+            
+            if (submitAnother) {
+                submitAnother.addEventListener('click', () => {
+                    successModal.classList.remove('active');
+                    document.getElementById('step1').scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+            
+            // Form validation
+            function validateForm() {
+                let isValid = true;
+                
+                // Simple validation example
+                const requiredFields = pitchForm.querySelectorAll('[required]');
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('error');
+                    } else {
+                        field.classList.remove('error');
+                    }
+                });
+                
+                return isValid;
+            }
+        });
+    </script>
+</body>
+</html>
