@@ -1,0 +1,760 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Research Tools | UDSM Startup Incubator</title>
+     <link rel="stylesheet" href="../styles/main.css">
+     <link rel="stylesheet" href="../styles/pages/research.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css">
+ </head>
+ <body>
+     <header class="site-header">
+         <nav class="main-nav">
+             <a href="../index.html" class="logo">UDSM Incubator</a>
+             <div class="nav-links">
+                 <a href="../index.html">Home</a>
+                 <a href="pitch.html">Pitch Your Idea</a>
+                 <a href="mentorship.html">Mentorship</a>
+                 <a href="funding.html">Funding</a>
+                 <a href="stories.html">Success Stories</a>
+                 <a href="workshops.html">Workshops</a>
+                 <a href="spaces.html">Co-working</a>
+                 <a href="legal.html">Legal & IP</a>
+                 <a href="research.html" class="active">Research Tools</a>
+             </div>
+             <button class="mobile-menu-btn" aria-label="Menu">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </button>
+         </nav>
+     </header>
+
+     <main class="research-page">
+         <section class="research-hero">
+             <div class="container">
+                 <div class="hero-content">
+                     <h1>Research Tools</h1>
+                     <p>Build surveys, compare competitors, visualize market trends, and start faster with ready-made templates.</p>
+                     <div class="hero-cta">
+                         <a class="btn btn-primary" href="#survey-builder"><i class="fas fa-poll"></i> Survey Builder</a>
+                         <a class="btn btn-outline" href="#data-viz"><i class="fas fa-chart-pie"></i> Data Visualization</a>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="survey-builder" class="section">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Survey Builder</h2>
+                     <p>Create questionnaires with multiple question types, then export as CSV or PDF.</p>
+                 </div>
+
+                 <div class="tool-shell" id="surveyShell">
+                     <div class="tool-toolbar">
+                         <div class="toolbar-left">
+                             <div class="toolbar-title">Survey Builder</div>
+                         </div>
+                         <div class="toolbar-right">
+                             <button class="btn btn-primary" id="addQuestionBtn"><i class="fas fa-plus"></i> Add Question</button>
+                             <button class="btn btn-ghost" id="previewSurveyBtn"><i class="fas fa-eye"></i> Preview</button>
+                             <button class="btn btn-ghost" id="saveSurveyBtn"><i class="fas fa-save"></i> Save</button>
+                             <button class="btn btn-ghost" id="exportSurveyCsvBtn"><i class="fas fa-file-csv"></i> Export CSV</button>
+                             <button class="btn btn-ghost" id="exportSurveyPdfBtn"><i class="fas fa-file-pdf"></i> Export PDF</button>
+                         </div>
+                     </div>
+                     <div class="tool-body">
+                         <div class="grid-2">
+                             <div class="card">
+                                 <h3>Survey Setup</h3>
+                                 <div class="form-group">
+                                     <label for="surveyTitle">Survey Title</label>
+                                     <input class="input" id="surveyTitle" type="text" placeholder="e.g., Customer Discovery Survey">
+                                 </div>
+                                 <div class="form-group">
+                                     <label for="surveyDescription">Survey Description</label>
+                                     <textarea class="textarea" id="surveyDescription" placeholder="What is the purpose of this survey?"></textarea>
+                                 </div>
+                                 <div>
+                                     <h3>Questions</h3>
+                                     <div class="questions-list" id="questionsList"></div>
+                                 </div>
+                             </div>
+                             <div class="card">
+                                 <h3>Question Types</h3>
+                                 <p class="inline-note">Click a type to add it to your survey.</p>
+                                 <div class="palette" id="questionPalette">
+                                     <button class="btn btn-ghost" data-type="multiple_choice"><i class="fas fa-dot-circle"></i> Multiple Choice</button>
+                                     <button class="btn btn-ghost" data-type="checkboxes"><i class="far fa-check-square"></i> Checkboxes</button>
+                                     <button class="btn btn-ghost" data-type="dropdown"><i class="fas fa-caret-square-down"></i> Dropdown</button>
+                                     <button class="btn btn-ghost" data-type="short_answer"><i class="fas fa-i-cursor"></i> Short Answer</button>
+                                     <button class="btn btn-ghost" data-type="paragraph"><i class="fas fa-align-left"></i> Paragraph</button>
+                                     <button class="btn btn-ghost" data-type="linear_scale"><i class="fas fa-sliders-h"></i> Linear Scale</button>
+                                     <button class="btn btn-ghost" data-type="date"><i class="far fa-calendar-alt"></i> Date</button>
+                                     <button class="btn btn-ghost" data-type="time"><i class="far fa-clock"></i> Time</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="competitor-analysis" class="section alt">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Competitor Analysis</h2>
+                     <p>Compare competitors across key categories and record SWOT insights.</p>
+                 </div>
+
+                 <div class="tool-shell" id="competitorShell">
+                     <div class="tool-toolbar">
+                         <div class="toolbar-left">
+                             <div class="toolbar-title">Competitor Comparison Matrix</div>
+                         </div>
+                         <div class="toolbar-right">
+                             <button class="btn btn-primary" id="addCompetitorBtn"><i class="fas fa-user-plus"></i> Add Competitor</button>
+                             <button class="btn btn-ghost" id="exportCompetitorCsvBtn"><i class="fas fa-file-csv"></i> Export CSV</button>
+                             <button class="btn btn-ghost" id="exportCompetitorPdfBtn"><i class="fas fa-file-pdf"></i> Export PDF</button>
+                         </div>
+                     </div>
+                     <div class="tool-body">
+                         <div class="table-shell">
+                             <table class="table" id="competitorTable"></table>
+                         </div>
+
+                         <div class="swot-grid" id="swotGrid">
+                             <div class="swot-box">
+                                 <div class="swot-head">Strengths</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotStrengths" placeholder="Strengths..."></textarea>
+                                 </div>
+                             </div>
+                             <div class="swot-box">
+                                 <div class="swot-head">Weaknesses</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotWeaknesses" placeholder="Weaknesses..."></textarea>
+                                 </div>
+                             </div>
+                             <div class="swot-box">
+                                 <div class="swot-head">Opportunities</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotOpportunities" placeholder="Opportunities..."></textarea>
+                                 </div>
+                             </div>
+                             <div class="swot-box">
+                                 <div class="swot-head">Threats</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotThreats" placeholder="Threats..."></textarea>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="data-viz" class="section">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Data Visualization</h2>
+                     <p>Explore sample market data with interactive charts and export the active chart.</p>
+                 </div>
+
+                 <div class="tool-shell" id="chartsShell">
+                     <div class="tool-toolbar">
+                         <div class="toolbar-left">
+                             <div class="tabs" id="chartTabs">
+                                 <button class="tab-btn active" data-chart="marketShare">Market Share</button>
+                                 <button class="tab-btn" data-chart="priceComparison">Price Comparison</button>
+                                 <button class="tab-btn" data-chart="customerSatisfaction">Customer Satisfaction</button>
+                                 <button class="tab-btn" data-chart="revenueTrends">Revenue Trends</button>
+                             </div>
+                         </div>
+                         <div class="toolbar-right">
+                             <select class="select" id="timeRangeSelect">
+                                 <option value="6m">Last 6 months</option>
+                                 <option value="1y" selected>Last 12 months</option>
+                                 <option value="3y">Last 3 years</option>
+                             </select>
+                             <select class="select" id="groupingSelect">
+                                 <option value="monthly" selected>Monthly</option>
+                                 <option value="quarterly">Quarterly</option>
+                             </select>
+                             <button class="btn btn-ghost" id="exportChartBtn"><i class="fas fa-download"></i> Export</button>
+                         </div>
+                     </div>
+                     <div class="tool-body">
+                         <div class="chart-shell">
+                             <div class="chart-area">
+                                 <div class="chart-panel" data-chart-panel="marketShare">
+                                     <canvas id="marketShareChart"></canvas>
+                                 </div>
+                                 <div class="chart-panel" data-chart-panel="priceComparison" style="display:none;">
+                                     <canvas id="priceComparisonChart"></canvas>
+                                 </div>
+                                 <div class="chart-panel" data-chart-panel="customerSatisfaction" style="display:none;">
+                                     <canvas id="customerSatisfactionChart"></canvas>
+                                 </div>
+                                 <div class="chart-panel" data-chart-panel="revenueTrends" style="display:none;">
+                                     <canvas id="revenueTrendsChart"></canvas>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="research-templates" class="section alt">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Research Templates</h2>
+                     <p>Load a starter template to save time and standardize your research process.</p>
+                 </div>
+
+                 <div class="templates-grid">
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-users"></i></div>
+                         <h3>Customer Discovery</h3>
+                         <p>Validate a problem, identify early adopters, and capture pain points.</p>
+                         <button class="btn btn-primary" data-template="customerDiscovery">Use Template</button>
+                     </div>
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-chart-line"></i></div>
+                         <h3>Market Sizing</h3>
+                         <p>Estimate demand, segment the market, and document buying drivers.</p>
+                         <button class="btn btn-primary" data-template="marketSizing">Use Template</button>
+                     </div>
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-balance-scale"></i></div>
+                         <h3>Competitor Scan</h3>
+                         <p>Compare pricing, features, and customer satisfaction at a glance.</p>
+                         <button class="btn btn-primary" data-template="competitorScan">Use Template</button>
+                     </div>
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-comments"></i></div>
+                         <h3>Product Feedback</h3>
+                         <p>Gather feedback on a prototype, prioritize fixes, and measure satisfaction.</p>
+                         <button class="btn btn-primary" data-template="productFeedback">Use Template</button>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </main>
+
+     <div id="questionModal" class="modal" aria-hidden="true">
+         <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="questionModalTitle">
+             <div class="modal-header">
+                 <h3 id="questionModalTitle">Add Question</h3>
+                 <button class="modal-close" id="closeQuestionModal" aria-label="Close"><i class="fas fa-times"></i></button>
+             </div>
+
+             <input type="hidden" id="questionId">
+
+             <div class="form-row">
+                 <div class="form-group">
+                     <label for="questionType">Question Type</label>
+                     <select class="select" id="questionType">
+                         <option value="multiple_choice">Multiple Choice</option>
+                         <option value="checkboxes">Checkboxes</option>
+                         <option value="dropdown">Dropdown</option>
+                         <option value="short_answer">Short Answer</option>
+                         <option value="paragraph">Paragraph</option>
+                         <option value="linear_scale">Linear Scale</option>
+                         <option value="date">Date</option>
+                         <option value="time">Time</option>
+                     </select>
+                 </div>
+                 <div class="form-group">
+                     <label>&nbsp;</label>
+                     <label style="display:flex;gap:0.5rem;align-items:center;margin-top:0.25rem;">
+                         <input type="checkbox" id="questionRequired"> Required
+                     </label>
+                 </div>
+             </div>
+
+             <div class="form-group">
+                 <label for="questionText">Question</label>
+                 <input class="input" id="questionText" type="text" placeholder="Enter your question...">
+             </div>
+
+             <div id="optionsEditor" style="display:none;">
+                 <div class="tool-toolbar" style="padding:0.75rem 0.75rem;margin-bottom:0.75rem;border-radius:12px;">
+                     <div class="toolbar-left"><div class="toolbar-title">Options</div></div>
+                     <div class="toolbar-right">
+                         <button class="btn btn-ghost" id="addOptionBtn" type="button"><i class="fas fa-plus"></i> Add Option</button>
+                     </div>
+                 </div>
+                 <div id="optionsList"></div>
+             </div>
+
+             <div id="scaleEditor" style="display:none;">
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="scaleMin">Min</label>
+                         <input class="input" id="scaleMin" type="number" value="1">
+                     </div>
+                     <div class="form-group">
+                         <label for="scaleMax">Max</label>
+                         <input class="input" id="scaleMax" type="number" value="5">
+                     </div>
+                 </div>
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="scaleMinLabel">Min Label</label>
+                         <input class="input" id="scaleMinLabel" type="text" placeholder="e.g., Very low">
+                     </div>
+                     <div class="form-group">
+                         <label for="scaleMaxLabel">Max Label</label>
+                         <input class="input" id="scaleMaxLabel" type="text" placeholder="e.g., Very high">
+                     </div>
+                 </div>
+             </div>
+
+             <div class="modal-footer">
+                 <button class="btn btn-ghost" id="cancelQuestionBtn" type="button">Cancel</button>
+                 <button class="btn btn-primary" id="saveQuestionBtn" type="button"><i class="fas fa-save"></i> Save Question</button>
+             </div>
+         </div>
+     </div>
+
+     <div id="previewModal" class="modal" aria-hidden="true">
+         <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle">
+             <div class="modal-header">
+                 <h3 id="previewModalTitle">Survey Preview</h3>
+                 <button class="modal-close" id="closePreviewModal" aria-label="Close"><i class="fas fa-times"></i></button>
+             </div>
+             <div id="previewContainer"></div>
+             <div class="modal-footer">
+                 <button class="btn btn-primary" id="closePreviewBtn" type="button">Close</button>
+             </div>
+         </div>
+     </div>
+
+     <footer class="site-footer">
+         <div class="footer-content container">
+             <div class="footer-section">
+                 <h3>Contact Us</h3>
+                 <p>Email: research@udsm-incubator.ac.tz</p>
+                 <p>Phone: +255 123 456 789</p>
+                 <p>Location: UDSM Innovation Hub, Dar es Salaam</p>
+             </div>
+             <div class="footer-section">
+                 <h3>Quick Links</h3>
+                 <a href="../index.html">Home</a>
+                 <a href="pitch.html">Pitch Your Idea</a>
+                 <a href="mentorship.html">Mentorship</a>
+                 <a href="funding.html">Funding</a>
+                 <a href="stories.html">Success Stories</a>
+             </div>
+             <div class="footer-section">
+                 <h3>Follow Us</h3>
+                 <div class="social-links">
+                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                     <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                 </div>
+             </div>
+         </div>
+         <div class="footer-bottom">
+             <p>&copy; 2025 UDSM Startup Incubator. All rights reserved.</p>
+         </div>
+     </footer>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.5.29/dist/jspdf.plugin.autotable.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+     <script src="../js/research.js"></script>
+ </body>
+ </html>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Research Tools | UDSM Startup Incubator</title>
+     <link rel="stylesheet" href="../styles/main.css">
+     <link rel="stylesheet" href="../styles/pages/research.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css">
+ </head>
+ <body>
+     <header class="site-header">
+         <nav class="main-nav">
+             <a href="../index.html" class="logo">UDSM Incubator</a>
+             <div class="nav-links">
+                 <a href="../index.html">Home</a>
+                 <a href="pitch.html">Pitch Your Idea</a>
+                 <a href="mentorship.html">Mentorship</a>
+                 <a href="funding.html">Funding</a>
+                 <a href="stories.html">Success Stories</a>
+                 <a href="workshops.html">Workshops</a>
+                 <a href="spaces.html">Co-working</a>
+                 <a href="legal.html">Legal & IP</a>
+                 <a href="research.html" class="active">Research Tools</a>
+             </div>
+             <button class="mobile-menu-btn" aria-label="Menu">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </button>
+         </nav>
+     </header>
+
+     <main class="research-page">
+         <section class="research-hero">
+             <div class="container">
+                 <div class="hero-content">
+                     <h1>Research Tools</h1>
+                     <p>Build surveys, compare competitors, visualize market trends, and start faster with ready-made templates.</p>
+                     <div class="hero-cta">
+                         <a class="btn btn-primary" href="#survey-builder"><i class="fas fa-poll"></i> Survey Builder</a>
+                         <a class="btn btn-outline" href="#data-viz"><i class="fas fa-chart-pie"></i> Data Visualization</a>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="survey-builder" class="section">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Survey Builder</h2>
+                     <p>Create questionnaires with multiple question types, then export as CSV or PDF.</p>
+                 </div>
+
+                 <div class="tool-shell" id="surveyShell">
+                     <div class="tool-toolbar">
+                         <div class="toolbar-left">
+                             <div class="toolbar-title">Survey Builder</div>
+                         </div>
+                         <div class="toolbar-right">
+                             <button class="btn btn-primary" id="addQuestionBtn"><i class="fas fa-plus"></i> Add Question</button>
+                             <button class="btn btn-ghost" id="previewSurveyBtn"><i class="fas fa-eye"></i> Preview</button>
+                             <button class="btn btn-ghost" id="saveSurveyBtn"><i class="fas fa-save"></i> Save</button>
+                             <button class="btn btn-ghost" id="exportSurveyCsvBtn"><i class="fas fa-file-csv"></i> Export CSV</button>
+                             <button class="btn btn-ghost" id="exportSurveyPdfBtn"><i class="fas fa-file-pdf"></i> Export PDF</button>
+                         </div>
+                     </div>
+                     <div class="tool-body">
+                         <div class="grid-2">
+                             <div class="card">
+                                 <h3>Survey Setup</h3>
+                                 <div class="form-group">
+                                     <label for="surveyTitle">Survey Title</label>
+                                     <input class="input" id="surveyTitle" type="text" placeholder="e.g., Customer Discovery Survey">
+                                 </div>
+                                 <div class="form-group">
+                                     <label for="surveyDescription">Survey Description</label>
+                                     <textarea class="textarea" id="surveyDescription" placeholder="What is the purpose of this survey?"></textarea>
+                                 </div>
+                                 <div>
+                                     <h3>Questions</h3>
+                                     <div class="questions-list" id="questionsList"></div>
+                                 </div>
+                             </div>
+                             <div class="card">
+                                 <h3>Question Types</h3>
+                                 <p class="inline-note">Click a type to add it to your survey.</p>
+                                 <div class="palette" id="questionPalette">
+                                     <button class="btn btn-ghost" data-type="multiple_choice"><i class="fas fa-dot-circle"></i> Multiple Choice</button>
+                                     <button class="btn btn-ghost" data-type="checkboxes"><i class="far fa-check-square"></i> Checkboxes</button>
+                                     <button class="btn btn-ghost" data-type="dropdown"><i class="fas fa-caret-square-down"></i> Dropdown</button>
+                                     <button class="btn btn-ghost" data-type="short_answer"><i class="fas fa-i-cursor"></i> Short Answer</button>
+                                     <button class="btn btn-ghost" data-type="paragraph"><i class="fas fa-align-left"></i> Paragraph</button>
+                                     <button class="btn btn-ghost" data-type="linear_scale"><i class="fas fa-sliders-h"></i> Linear Scale</button>
+                                     <button class="btn btn-ghost" data-type="date"><i class="far fa-calendar-alt"></i> Date</button>
+                                     <button class="btn btn-ghost" data-type="time"><i class="far fa-clock"></i> Time</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="competitor-analysis" class="section alt">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Competitor Analysis</h2>
+                     <p>Compare competitors across key categories and record SWOT insights.</p>
+                 </div>
+
+                 <div class="tool-shell" id="competitorShell">
+                     <div class="tool-toolbar">
+                         <div class="toolbar-left">
+                             <div class="toolbar-title">Competitor Comparison Matrix</div>
+                         </div>
+                         <div class="toolbar-right">
+                             <button class="btn btn-primary" id="addCompetitorBtn"><i class="fas fa-user-plus"></i> Add Competitor</button>
+                             <button class="btn btn-ghost" id="exportCompetitorCsvBtn"><i class="fas fa-file-csv"></i> Export CSV</button>
+                             <button class="btn btn-ghost" id="exportCompetitorPdfBtn"><i class="fas fa-file-pdf"></i> Export PDF</button>
+                         </div>
+                     </div>
+                     <div class="tool-body">
+                         <div class="table-shell">
+                             <table class="table" id="competitorTable"></table>
+                         </div>
+
+                         <div class="swot-grid" id="swotGrid">
+                             <div class="swot-box">
+                                 <div class="swot-head">Strengths</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotStrengths" placeholder="Strengths..."></textarea>
+                                 </div>
+                             </div>
+                             <div class="swot-box">
+                                 <div class="swot-head">Weaknesses</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotWeaknesses" placeholder="Weaknesses..."></textarea>
+                                 </div>
+                             </div>
+                             <div class="swot-box">
+                                 <div class="swot-head">Opportunities</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotOpportunities" placeholder="Opportunities..."></textarea>
+                                 </div>
+                             </div>
+                             <div class="swot-box">
+                                 <div class="swot-head">Threats</div>
+                                 <div class="swot-body">
+                                     <textarea id="swotThreats" placeholder="Threats..."></textarea>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="data-viz" class="section">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Data Visualization</h2>
+                     <p>Explore sample market data with interactive charts and export the active chart.</p>
+                 </div>
+
+                 <div class="tool-shell" id="chartsShell">
+                     <div class="tool-toolbar">
+                         <div class="toolbar-left">
+                             <div class="tabs" id="chartTabs">
+                                 <button class="tab-btn active" data-chart="marketShare">Market Share</button>
+                                 <button class="tab-btn" data-chart="priceComparison">Price Comparison</button>
+                                 <button class="tab-btn" data-chart="customerSatisfaction">Customer Satisfaction</button>
+                                 <button class="tab-btn" data-chart="revenueTrends">Revenue Trends</button>
+                             </div>
+                         </div>
+                         <div class="toolbar-right">
+                             <select class="select" id="timeRangeSelect">
+                                 <option value="6m">Last 6 months</option>
+                                 <option value="1y" selected>Last 12 months</option>
+                                 <option value="3y">Last 3 years</option>
+                             </select>
+                             <select class="select" id="groupingSelect">
+                                 <option value="monthly" selected>Monthly</option>
+                                 <option value="quarterly">Quarterly</option>
+                             </select>
+                             <button class="btn btn-ghost" id="exportChartBtn"><i class="fas fa-download"></i> Export</button>
+                         </div>
+                     </div>
+                     <div class="tool-body">
+                         <div class="chart-shell">
+                             <div class="chart-area">
+                                 <div class="chart-panel" data-chart-panel="marketShare">
+                                     <canvas id="marketShareChart"></canvas>
+                                 </div>
+                                 <div class="chart-panel" data-chart-panel="priceComparison" style="display:none;">
+                                     <canvas id="priceComparisonChart"></canvas>
+                                 </div>
+                                 <div class="chart-panel" data-chart-panel="customerSatisfaction" style="display:none;">
+                                     <canvas id="customerSatisfactionChart"></canvas>
+                                 </div>
+                                 <div class="chart-panel" data-chart-panel="revenueTrends" style="display:none;">
+                                     <canvas id="revenueTrendsChart"></canvas>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="research-templates" class="section alt">
+             <div class="container">
+                 <div class="section-header">
+                     <h2>Research Templates</h2>
+                     <p>Load a starter template to save time and standardize your research process.</p>
+                 </div>
+
+                 <div class="templates-grid">
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-users"></i></div>
+                         <h3>Customer Discovery</h3>
+                         <p>Validate a problem, identify early adopters, and capture pain points.</p>
+                         <button class="btn btn-primary" data-template="customerDiscovery">Use Template</button>
+                     </div>
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-chart-line"></i></div>
+                         <h3>Market Sizing</h3>
+                         <p>Estimate demand, segment the market, and document buying drivers.</p>
+                         <button class="btn btn-primary" data-template="marketSizing">Use Template</button>
+                     </div>
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-balance-scale"></i></div>
+                         <h3>Competitor Scan</h3>
+                         <p>Compare pricing, features, and customer satisfaction at a glance.</p>
+                         <button class="btn btn-primary" data-template="competitorScan">Use Template</button>
+                     </div>
+                     <div class="template-card">
+                         <div class="template-icon"><i class="fas fa-comments"></i></div>
+                         <h3>Product Feedback</h3>
+                         <p>Gather feedback on a prototype, prioritize fixes, and measure satisfaction.</p>
+                         <button class="btn btn-primary" data-template="productFeedback">Use Template</button>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </main>
+
+     <div id="questionModal" class="modal" aria-hidden="true">
+         <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="questionModalTitle">
+             <div class="modal-header">
+                 <h3 id="questionModalTitle">Add Question</h3>
+                 <button class="modal-close" id="closeQuestionModal" aria-label="Close"><i class="fas fa-times"></i></button>
+             </div>
+
+             <input type="hidden" id="questionId">
+
+             <div class="form-row">
+                 <div class="form-group">
+                     <label for="questionType">Question Type</label>
+                     <select class="select" id="questionType">
+                         <option value="multiple_choice">Multiple Choice</option>
+                         <option value="checkboxes">Checkboxes</option>
+                         <option value="dropdown">Dropdown</option>
+                         <option value="short_answer">Short Answer</option>
+                         <option value="paragraph">Paragraph</option>
+                         <option value="linear_scale">Linear Scale</option>
+                         <option value="date">Date</option>
+                         <option value="time">Time</option>
+                     </select>
+                 </div>
+                 <div class="form-group">
+                     <label>&nbsp;</label>
+                     <label style="display:flex;gap:0.5rem;align-items:center;margin-top:0.25rem;">
+                         <input type="checkbox" id="questionRequired"> Required
+                     </label>
+                 </div>
+             </div>
+
+             <div class="form-group">
+                 <label for="questionText">Question</label>
+                 <input class="input" id="questionText" type="text" placeholder="Enter your question...">
+             </div>
+
+             <div id="optionsEditor" style="display:none;">
+                 <div class="tool-toolbar" style="padding:0.75rem 0.75rem;margin-bottom:0.75rem;border-radius:12px;">
+                     <div class="toolbar-left"><div class="toolbar-title">Options</div></div>
+                     <div class="toolbar-right">
+                         <button class="btn btn-ghost" id="addOptionBtn" type="button"><i class="fas fa-plus"></i> Add Option</button>
+                     </div>
+                 </div>
+                 <div id="optionsList"></div>
+             </div>
+
+             <div id="scaleEditor" style="display:none;">
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="scaleMin">Min</label>
+                         <input class="input" id="scaleMin" type="number" value="1">
+                     </div>
+                     <div class="form-group">
+                         <label for="scaleMax">Max</label>
+                         <input class="input" id="scaleMax" type="number" value="5">
+                     </div>
+                 </div>
+                 <div class="form-row">
+                     <div class="form-group">
+                         <label for="scaleMinLabel">Min Label</label>
+                         <input class="input" id="scaleMinLabel" type="text" placeholder="e.g., Very low">
+                     </div>
+                     <div class="form-group">
+                         <label for="scaleMaxLabel">Max Label</label>
+                         <input class="input" id="scaleMaxLabel" type="text" placeholder="e.g., Very high">
+                     </div>
+                 </div>
+             </div>
+
+             <div class="modal-footer">
+                 <button class="btn btn-ghost" id="cancelQuestionBtn" type="button">Cancel</button>
+                 <button class="btn btn-primary" id="saveQuestionBtn" type="button"><i class="fas fa-save"></i> Save Question</button>
+             </div>
+         </div>
+     </div>
+
+     <div id="previewModal" class="modal" aria-hidden="true">
+         <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="previewModalTitle">
+             <div class="modal-header">
+                 <h3 id="previewModalTitle">Survey Preview</h3>
+                 <button class="modal-close" id="closePreviewModal" aria-label="Close"><i class="fas fa-times"></i></button>
+             </div>
+             <div id="previewContainer"></div>
+             <div class="modal-footer">
+                 <button class="btn btn-primary" id="closePreviewBtn" type="button">Close</button>
+             </div>
+         </div>
+     </div>
+
+     <footer class="site-footer">
+         <div class="footer-content container">
+             <div class="footer-section">
+                 <h3>Contact Us</h3>
+                 <p>Email: research@udsm-incubator.ac.tz</p>
+                 <p>Phone: +255 123 456 789</p>
+                 <p>Location: UDSM Innovation Hub, Dar es Salaam</p>
+             </div>
+             <div class="footer-section">
+                 <h3>Quick Links</h3>
+                 <a href="../index.html">Home</a>
+                 <a href="pitch.html">Pitch Your Idea</a>
+                 <a href="mentorship.html">Mentorship</a>
+                 <a href="funding.html">Funding</a>
+                 <a href="stories.html">Success Stories</a>
+             </div>
+             <div class="footer-section">
+                 <h3>Follow Us</h3>
+                 <div class="social-links">
+                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                     <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                 </div>
+             </div>
+         </div>
+         <div class="footer-bottom">
+             <p>&copy; 2025 UDSM Startup Incubator. All rights reserved.</p>
+         </div>
+     </footer>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.5.29/dist/jspdf.plugin.autotable.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+     <script src="../js/research.js"></script>
+ </body>
+ </html>

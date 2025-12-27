@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Opportunities | UDSM Startup Incubator</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/funding.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium Header -->
+    <header class="site-header premium-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>UDSM<span class="logo-highlight">INCUBATOR</span></span>
+                </a>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="pitch.html">Pitch</a>
+                    <a href="mentorship.html">Mentorship</a>
+                    <a href="funding.html" class="active">Funding</a>
+                    <a href="stories.html">Success Stories</a>
+                    <a href="#" class="btn-nav-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Premium Background -->
+    <section class="funding-hero premium-hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Financial Growth" 
+                 class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content animate-fade-up">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>Funded Startups: $2.5M+ Raised</span>
+                </div>
+                <h1 class="hero-title">Unlock Your <span class="gradient-text">Funding Potential</span></h1>
+                <p class="hero-subtitle">Access grants, investors, and strategic partnerships tailored for Tanzanian innovators. 
+                Join 150+ startups that secured funding through our network.</p>
+                
+                <!-- Hero Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="45">0</div>
+                        <div class="stat-label">Active Investors</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3.2">0</div>
+                        <div class="stat-label">M Average Funding</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="92">0</div>
+                        <div class="stat-label">Success Rate %</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#funding-options" class="btn btn-primary btn-glow">
+                        <i class="fas fa-search-dollar"></i> Find Funding
+                    </a>
+                    <a href="#funding-calculator" class="btn btn-outline">
+                        <i class="fas fa-calculator"></i> Calculate Needs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funding Calculator Section -->
+    <section id="funding-calculator" class="funding-calculator premium-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Smart Funding Calculator</h2>
+                <p class="section-subtitle">Estimate your funding requirements based on stage, team, and operational needs</p>
+            </div>
+            
+            <div class="calculator-container">
+                <div class="calculator-form card-hover">
+                    <h3><i class="fas fa-sliders-h"></i> Enter Your Details</h3>
+                    
+                    <div class="form-group">
+                        <label for="businessStage">
+                            <i class="fas fa-chart-line"></i> Business Stage *
+                        </label>
+                        <select id="businessStage" class="form-control styled-select">
+                            <option value="">Select your business stage</option>
+                            <option value="ideation">Ideation (Pre-revenue)</option>
+                            <option value="prototype">Prototype Development</option>
+                            <option value="seed">Seed Stage (Early Revenue)</option>
+                            <option value="early">Early Growth (Scaling)</option>
+                            <option value="growth">Growth Stage (Expansion)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teamSize">
+                            <i class="fas fa-users"></i> Team Size *
+                        </label>
+                        <div class="range-slider">
+                            <input type="range" id="teamSize" min="1" max="50" value="5">
+                            <div class="slider-labels">
+                                <span>1</span>
+                                <span id="teamSizeValue">5</span>
+                                <span>50+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="runway">
+                            <i class="fas fa-calendar-alt"></i> Desired Runway *
+                        </label>
+                        <input type="range" id="runway" class="form-control-range" min="3" max="24" value="12">
+                        <div class="range-value">
+                            <span class="range-display"><span id="runwayValue">12</span> months</span>
+                            <span class="range-info">(Time until next funding round)</span>
+                        </div>
+                    </div>
+
+                    <div class="expenses-section">
+                        <h4><i class="fas fa-money-bill-wave"></i> Monthly Expenses (TZS)</h4>
+                        
+                        <div class="expense-grid">
+                            <div class="expense-item">
+                                <div class="expense-header">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>Salaries & Benefits</span>
+                                </div>
+                                <div class="expense-input">
+                                    <input type="number" id="salaries" value="5000000" min="0">
+                                    <span>TZS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="expense-item">
+                                <div class="expense-header">
+                                    <i class="fas fa-building"></i>
+                                    <span>Office & Operations</span>
+                                </div>
+                                <div class="expense-input">
+                                    <input type="number" id="office" value="500000" min="0">
+                                    <span>TZS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="expense-item">
+                                <div class="expense-header">
+                                    <i class="fas fa-bullhorn"></i>
+                                    <span>Marketing & Sales</span>
+                                </div>
+                                <div class="expense-input">
+                                    <input type="number" id="marketing" value="1000000" min="0">
+                                    <span>TZS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="expense-item">
+                                <div class="expense-header">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <span>Technology & Tools</span>
+                                </div>
+                                <div class="expense-input">
+                                    <input type="number" id="technology" value="750000" min="0">
+                                    <span>TZS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="expense-total">
+                            <div class="total-label">
+                                <i class="fas fa-calculator"></i>
+                                <strong>Total Monthly Burn Rate</strong>
+                            </div>
+                            <div class="total-amount" id="totalMonthlyExpenses">7,250,000 TZS</div>
+                        </div>
+                    </div>
+
+                    <button id="calculateBtn" class="btn btn-primary btn-block btn-large">
+                        <i class="fas fa-calculator"></i> Calculate Funding Needs
+                    </button>
+                </div>
+
+                <div class="calculator-results card-hover" id="calculatorResults">
+                    <div class="results-header">
+                        <div class="results-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Your Funding Analysis</h3>
+                        <p>Personalized recommendations based on your inputs</p>
+                    </div>
+                    
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="result-content">
+                                <span class="result-label">Monthly Burn Rate</span>
+                                <strong class="result-value" id="monthlyBurnRate">7.25M TZS</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="result-item">
+                            <div class="result-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="result-content">
+                                <span class="result-label">Recommended Funding</span>
+                                <strong class="result-value" id="recommendedFunding">87M TZS</strong>
+                            </div>
+                        </div>
+                        
+                        <div class="result-item highlight">
+                            <div class="result-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="result-content">
+                                <span class="result-label">Funding to Raise</span>
+                                <strong class="result-value" id="fundingToRaise">100M TZS</strong>
+                                <small>(Including 15% buffer)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="results-breakdown">
+                        <h4><i class="fas fa-chart-bar"></i> Allocation Breakdown</h4>
+                        <div class="breakdown-item">
+                            <span>Operational Runway</span>
+                            <div class="breakdown-bar">
+                                <div class="bar-fill" style="width: 75%"></div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Growth Initiatives</span>
+                            <div class="breakdown-bar">
+                                <div class="bar-fill" style="width: 15%"></div>
+                            </div>
+                            <span>15%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Emergency Buffer</span>
+                            <div class="breakdown-bar">
+                                <div class="bar-fill" style="width: 10%"></div>
+                            </div>
+                            <span>10%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="result-actions">
+                        <button id="savePlan" class="btn btn-outline">
+                            <i class="fas fa-download"></i> Save Plan
+                        </button>
+                        <button id="findInvestors" class="btn btn-gradient">
+                            <i class="fas fa-search-dollar"></i> Match with Investors
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funding Opportunities Section -->
+    <section id="funding-options" class="funding-options premium-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Available Funding Opportunities</h2>
+                <p class="section-subtitle">Curated funding sources for Tanzanian startups at every stage</p>
+            </div>
+
+            <!-- Advanced Filters -->
+            <div class="advanced-filters card-hover">
+                <div class="filter-search">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="fundingSearch" placeholder="Search by investor, industry, or amount...">
+                        <button class="search-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="fundingType">
+                            <i class="fas fa-tag"></i> Funding Type
+                        </label>
+                        <select id="fundingType" class="styled-select">
+                            <option value="">All Types</option>
+                            <option value="grant">Grants (Non-dilutive)</option>
+                            <option value="equity">Equity Investment</option>
+                            <option value="loan">Soft Loans</option>
+                            <option value="competition">Pitch Competitions</option>
+                            <option value="accelerator">Accelerator Programs</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="fundingAmount">
+                            <i class="fas fa-coins"></i> Amount Range
+                        </label>
+                        <select id="fundingAmount" class="styled-select">
+                            <option value="">Any Amount</option>
+                            <option value="0-500000">Under 500K TZS</option>
+                            <option value="500000-5000000">500K - 5M TZS</option>
+                            <option value="5000000-50000000">5M - 50M TZS</option>
+                            <option value="50000000+">50M+ TZS</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="industry">
+                            <i class="fas fa-industry"></i> Industry Focus
+                        </label>
+                        <select id="industry" class="styled-select">
+                            <option value="">All Industries</option>
+                            <option value="tech">Technology</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="health">HealthTech</option>
+                            <option value="fintech">FinTech</option>
+                            <option value="renewable">Renewable Energy</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-filter">
+                        <i class="fas fa-filter"></i> Apply Filters
+                    </button>
+                </div>
+            </div>
+
+            <!-- Funding Grid -->
+            <div class="funding-grid" id="fundingGrid">
+                <!-- Funding cards will be loaded here -->
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading-funding" id="loadingFunding">
+                <div class="spinner"></div>
+                <p>Loading funding opportunities...</p>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button id="prevFundingPage" class="page-nav" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <div class="page-numbers" id="fundingPageNumbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                    <span class="page-number">3</span>
+                    <span class="page-number">4</span>
+                    <span class="page-number">5</span>
+                </div>
+                <button id="nextFundingPage" class="page-nav">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investor Education Video -->
+    <section class="investor-education premium-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Master the Funding Process</h2>
+                <p class="section-subtitle">Learn from successful founders and investors</p>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <div class="video-player">
+                        <iframe 
+                            src="https://www.youtube.com/embed/SMEa4C1UN-s" 
+                            title="Startup Funding Masterclass"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3><i class="fas fa-play-circle"></i> From Pitch to Funding: A Founder's Journey</h3>
+                        <p>Learn how successful African startups secured funding, with insights from investors at 
+                           Africa Angels Network and VC4Africa.</p>
+                        <div class="video-stats">
+                            <span><i class="fas fa-eye"></i> 45,892 views</span>
+                            <span><i class="fas fa-clock"></i> 24 min</span>
+                            <span><i class="fas fa-star"></i> 4.8/5 rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funding Timeline -->
+    <section class="funding-timeline premium-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Funding Deadlines</h2>
+                <p class="section-subtitle">Plan your applications with our timeline tracker</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline">
+                    <!-- Timeline items will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners & Investors -->
+    <section class="funding-partners premium-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Trusted by Leading Investors</h2>
+                <p class="section-subtitle">Our startups have secured funding from top organizations</p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="VC Partner">
+                    <span class="partner-name">Venture Catalysts</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Bank Partner">
+                    <span class="partner-name">CRDB Bank</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="https://live.staticflickr.com/65535/52891990532_95196c650a_b.jpg" alt="Government Partner">
+                    <span class="partner-name">COSTECH</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Corporate Partner">
+                    <span class="partner-name">Vodacom Foundation</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Angel Network">
+                    <span class="partner-name">Africa Angels</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Resources -->
+    <section class="funding-tips premium-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Funding Success Strategies</h2>
+                <p class="section-subtitle">Expert advice to increase your funding chances</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card card-hover">
+                    <div class="tip-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Perfect Your Pitch Deck</h3>
+                    <p>Create compelling decks that highlight problem-solution fit, market opportunity, and traction. 
+                    Our templates have helped raise over $50M.</p>
+                    <a href="#" class="tip-link">View Templates <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="tip-card card-hover">
+                    <div class="tip-icon">
+                        <i class="fas fa-chart-network"></i>
+                    </div>
+                    <h3>Investor Matchmaking</h3>
+                    <p>Get introduced to investors who align with your industry, stage, and vision through our 
+                    curated network of 200+ active investors.</p>
+                    <a href="#" class="tip-link">Meet Investors <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="tip-card card-hover">
+                    <div class="tip-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Term Sheet Guidance</h3>
+                    <p>Understand equity, valuation, and negotiation strategies with our legal experts. 
+                    Avoid common pitfalls in funding agreements.</p>
+                    <a href="#" class="tip-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="tip-card card-hover">
+                    <div class="tip-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Post-Funding Growth</h3>
+                    <p>Access resources for scaling after funding: hiring plans, operational scaling, 
+                    and next-round preparation strategies.</p>
+                    <a href="#" class="tip-link">Growth Resources <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="funding-cta premium-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Secure Your Funding?</h2>
+                <p>Join our next funding readiness workshop or schedule a 1:1 consultation with our funding experts.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-large btn-glow">
+                        <i class="fas fa-calendar-check"></i> Book Consultation
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-file-download"></i> Download Guide
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>UDSM Startup Incubator</span>
+                    </div>
+                    <p class="footer-tagline">Empowering Tanzania's next generation of innovators and entrepreneurs.</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> University of Dar es Salaam, Tanzania</p>
+                        <p><i class="fas fa-phone"></i> +255 22 241 0500</p>
+                        <p><i class="fas fa-envelope"></i> funding@udsm-incubator.ac.tz</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="pitch.html">Pitch Competition</a></li>
+                        <li><a href="mentorship.html">Mentorship Program</a></li>
+                        <li><a href="stories.html">Success Stories</a></li>
+                        <li><a href="#">Investor Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Funding Guides</a></li>
+                        <li><a href="#">Pitch Deck Templates</a></li>
+                        <li><a href="#">Investor Directory</a></li>
+                        <li><a href="#">Legal Templates</a></li>
+                        <li><a href="#">Market Research</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p>Get weekly funding opportunities and startup tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 UDSM Startup Incubator. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="modal-content">
+            <div class="success-check">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3>Application Submitted!</h3>
+            <p>Your funding application has been received. Our team will review it and contact you within 48 hours.</p>
+            <button class="btn btn-primary btn-close-modal">Continue Exploring</button>
+        </div>
+    </div>
+
+    <script src="../js/funding.js"></script>
+</body>
+</html>
