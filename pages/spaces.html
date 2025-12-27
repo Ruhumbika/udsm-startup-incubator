@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-working Spaces | UDSM Startup Incubator</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/spaces.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        :root {
+            --premium-blue: #0A2463;
+            --premium-teal: #00C2D1;
+            --premium-orange: #FF6B35;
+            --premium-dark: #1A1A2E;
+            --premium-light: #F8F9FA;
+            --premium-gradient: linear-gradient(135deg, #0A2463 0%, #00C2D1 100%);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-xl: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Premium Navigation -->
+    <header class="premium-header">
+        <div class="container">
+            <nav class="premium-nav">
+                <div class="nav-brand">
+                    <div class="brand-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span class="brand-text">
+                            <strong>UDSM</strong>STARTUP HUB
+                        </span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="legal.html"> Legal</a></li>
+                    <li><a href="research.html"> Research</a></li>
+                    <li><a href="investors.html"> Investors</a></li>
+                    <li><a href="stories.html"> Success Stories</a></li>
+                    <li><a href="workshops.html"> Workshops</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="pitch.html">Pitch</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="spaces.html" class="nav-active">Spaces</a></li>
+                    <li><a href="funding.html">Funding</a></li>
+                    <li><a href="stories.html">Success</a></li>
+                    <li><a href="workshops.html" class="nav-cta">Book Now</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="premium-hero">
+        <div class="hero-video-bg">
+            <div class="video-overlay"></div>
+            <div class="hero-gradient"></div>
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Modern co-working space" class="hero-bg-image">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-up">
+                    <span class="gradient-text">Premium</span> Workspaces
+                    <br>For Visionary <span class="highlight">Founders</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-up" style="animation-delay: 0.2s">
+                    State-of-the-art facilities where Tanzania's brightest minds build tomorrow's unicorns.
+                </p>
+                <div class="hero-stats animate-fade-up" style="animation-delay: 0.4s">
+                    <div class="stat-item">
+                        <div class="stat-number">1,200+</div>
+                        <div class="stat-label">Entrepreneurs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">45</div>
+                        <div class="stat-label">Startups Funded</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Access</div>
+                    </div>
+                </div>
+                <div class="hero-actions animate-fade-up" style="animation-delay: 0.6s">
+                    <a href="#booking" class="btn-primary btn-glow">
+                        <i class="fas fa-calendar-check"></i> Book Tour
+                    </a>
+                    <a href="#spaces" class="btn-outline btn-icon">
+                        <i class="fas fa-map-marked-alt"></i> View Spaces
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tour Section -->
+    <section class="video-tour-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Virtual <span class="gradient-text">Tour</span></h2>
+                <p class="section-subtitle">Experience our spaces before you visit</p>
+            </div>
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            alt="Co-working space tour preview">
+                    </div>
+                    <div class="video-info">
+                        <h3>Innovation Hub Walkthrough</h3>
+                        <p>Join our community manager for a guided tour of our flagship location at UDSM Main Campus.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 4:32 min</span>
+                            <span><i class="far fa-eye"></i> 2.4k views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card feature-card-large">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>High-Speed Fiber</h3>
+                    <p>1Gbps symmetrical fiber internet with redundant connections</p>
+                    <div class="feature-tag">Most Popular</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Events</h3>
+                    <p>Weekly networking sessions with investors and mentors</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Print Lab</h3>
+                    <p>3D printing, laser cutting, and professional printing services</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Concierge</h3>
+                    <p>Dedicated support team for all your business needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spaces Gallery -->
+    <section class="spaces-gallery" id="spaces">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="gradient-text">Spaces</span></h2>
+                <p class="section-subtitle">Designed for productivity and collaboration</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-featured">
+                    <div class="gallery-image">
+                        <img src="https://coworker.imgix.net/photos/mongolia/ulaanbaatar/hub-innovation-center/main.jpg?w=1200&h=630&q=90&auto=format,compress&fit=crop&mark=/template/img/wm_icon.png&markscale=5&markalign=center,middle"
+                            alt="Main co-working area">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Innovation Hub</h3>
+                                <p>Open-plan workspace with panoramic views</p>
+                                <span class="gallery-tag">Capacity: 50+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Private office">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Private Offices</h3>
+                                <p>Soundproof spaces for focused work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Meeting room">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h3>Board Rooms</h3>
+                                <p>Tech-enabled meeting spaces</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Logos -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-header center">
+                <h3 class="section-subtitle">Trusted by Leading Organizations</h3>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <div class="logo-placeholder">BRELA</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">TANZICT</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">VODACOM</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">GOOGLE</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">TCCIA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-header">
+                    <h2 class="section-title">Ready to <span class="gradient-text">Begin?</span></h2>
+                    <p class="section-subtitle">Book a tour or reserve your space in minutes</p>
+                </div>
+
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bookingType">I want to:</label>
+                                <select id="bookingType" class="form-select">
+                                    <option value="tour">Book a Tour</option>
+                                    <option value="day-pass">Reserve Day Pass</option>
+                                    <option value="meeting-room">Book Meeting Room</option>
+                                    <option value="membership">Apply for Membership</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="campus">Campus:</label>
+                                <select id="campus" class="form-select">
+                                    <option value="main">Main Campus Innovation Hub</option>
+                                    <option value="muhimbili">Muhimbili Health Tech Lab</option>
+                                    <option value="mnc">Mwalimu Nyerere Campus</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date:</label>
+                                <input type="date" id="date" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time:</label>
+                                <select id="time" class="form-select">
+                                    <option value="9:00">9:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" class="form-input" placeholder="you@startup.co.tz" required>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Submit Booking Request
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i> We'll respond within 24 hours to confirm your booking
+                        </p>
+                    </form>
+                </div>
+
+                <div class="booking-benefits">
+                    <h3>Why Choose UDSM Spaces?</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> University-affiliated credibility</li>
+                        <li><i class="fas fa-check-circle"></i> Access to student talent pool</li>
+                        <li><i class="fas fa-check-circle"></i> Research partnership opportunities</li>
+                        <li><i class="fas fa-check-circle"></i> Investor networking events</li>
+                        <li><i class="fas fa-check-circle"></i> Academic mentorship programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Founder <span class="gradient-text">Stories</span></h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The UDSM co-working space gave our fintech startup the perfect launchpad. The network alone
+                            is worth the membership."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.MNDFjKQsKiY0KZ6QSTDvxAHaHa?w=640&h=641&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Sarah K.">
+                        <div>
+                            <h4>Sarah K.</h4>
+                            <p>CEO, FinTech Tanzania</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a solo founder, the community here has been invaluable. I've found co-founders, mentors,
+                            and even my first investors."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                            alt="David M.">
+                        <div>
+                            <h4>David M.</h4>
+                            <p>Founder, AgriTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Your Workspace Awaits</h2>
+                    <p>Join Tanzania's most dynamic community of innovators, creators, and disruptors.</p>
+                    <div class="cta-stats">
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Member Satisfaction</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">$2.5M+</div>
+                            <div class="stat-label">Raised by Members</div>
+                        </div>
+                    </div>
+                    <a href="#booking" class="btn-primary btn-large">
+                        <i class="fas fa-door-open"></i> Start Your Journey
+                    </a>
+                </div>
+                <div class="cta-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Community networking">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>UDSM Startup Hub</span>
+                    </div>
+                    <p class="footer-tagline">Building Tanzania's Innovation Economy</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Campuses</h4>
+                    <ul>
+                        <li><a href="#">Main Campus Hub</a></li>
+                        <li><a href="#">Muhimbili Health Lab</a></li>
+                        <li><a href="#">Mwalimu Nyerere Campus</a></li>
+                        <li><a href="#">Dodoma Satellite</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Membership Plans</a></li>
+                        <li><a href="#">Event Calendar</a></li>
+                        <li><a href="#">Startup Toolkit</a></li>
+                        <li><a href="#">Investor Network</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <p><i class="fas fa-envelope"></i> spaces@udsm.ac.tz</p>
+                    <p><i class="fas fa-phone"></i> +255 22 241 0500</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Innovation Hub, UDSM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 UDSM Startup Incubator. Proudly building Tanzania's future.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Premium Animations
+        document.addEventListener('DOMContentLoaded', function () {
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements
+            document.querySelectorAll('.animate-fade-up, .feature-card, .gallery-item').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Video placeholder interaction
+            const videoPlaceholder = document.querySelector('.video-placeholder');
+            if (videoPlaceholder) {
+                videoPlaceholder.addEventListener('click', function () {
+                    this.innerHTML = `
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&modestbranding=1" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    `;
+                });
+            }
+
+            // Form submission
+            const bookingForm = document.getElementById('bookingForm');
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Show success message
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                    submitBtn.disabled = true;
+
+                    setTimeout(() => {
+                        submitBtn.innerHTML = '<i class="fas fa-check"></i> Request Sent!';
+                        submitBtn.classList.add('btn-success');
+
+                        // Reset form
+                        setTimeout(() => {
+                            this.reset();
+                            submitBtn.innerHTML = originalText;
+                            submitBtn.disabled = false;
+                            submitBtn.classList.remove('btn-success');
+                        }, 2000);
+                    }, 1500);
+                });
+            }
+
+            // Mobile menu toggle
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
