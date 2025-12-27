@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Investors | UDSM Startup Incubator</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/investors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="../index.html" class="logo">UDSM Incubator</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="pitch.html">Pitch Your Idea</a>
+                <a href="mentorship.html">Mentorship</a>
+                <a href="funding.html">Funding</a>
+                <a href="stories.html">Success Stories</a>
+                <a href="workshops.html">Workshops</a>
+                <a href="spaces.html">Co-working</a>
+                <a href="legal.html">Legal & IP</a>
+                <a href="market-research.html">Market Research</a>
+                <a href="investors.html" class="active">Investors</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="investors-page">
+        <!-- Hero Section -->
+        <section class="investors-hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1>Connect with Investors</h1>
+                    <p>Find the right investors for your startup and secure the funding you need to grow your business.</p>
+                    <div class="hero-cta">
+                        <a href="#find-investors" class="btn btn-primary">Find Investors</a>
+                        <a href="#pitch" class="btn btn-outline">Pitch Your Startup</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512,54.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#ffffff"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,141.56,72.2V0Z" opacity=".5" fill="#ffffff"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="investor-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">Active Investors</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number" data-count="45">0</div>
+                        <div class="stat-label">Investment Deals</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label">Startups Funded</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">Investment Sectors</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find Investors Section -->
+        <section id="find-investors" class="find-investors">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Find the Right Investors</h2>
+                    <p>Connect with angel investors, venture capitalists, and funding organizations interested in innovative startups</p>
+                </div>
+
+                <div class="investor-filters" data-aos="fade-up" data-aos-delay="100">
+                    <div class="filter-group">
+                        <label for="investorType">Investor Type</label>
+                        <select id="investorType" class="select2">
+                            <option value="all">All Types</option>
+                            <option value="angel">Angel Investors</option>
+                            <option value="vc">Venture Capital</option>
+                            <option value="corporate">Corporate Investors</option>
+                            <option value="government">Government Funds</option>
+                            <option value="incubator">Incubators/Accelerators</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="industrySector">Industry Sector</label>
+                        <select id="industrySector" class="select2" multiple="multiple">
+                            <option value="technology">Technology</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="education">Education</option>
+                            <option value="finance">Finance</option>
+                            <option value="agriculture">Agriculture</option>
+                            <option value="renewable">Renewable Energy</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="ecommerce">E-commerce</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="investmentRange">Investment Range</label>
+                        <select id="investmentRange" class="select2">
+                            <option value="all">Any Amount</option>
+                            <option value="0-10000">Up to $10,000</option>
+                            <option value="10000-50000">$10,000 - $50,000</option>
+                            <option value="50000-100000">$50,000 - $100,000</option>
+                            <option value="100000-500000">$100,000 - $500,000</option>
+                            <option value="500000+">$500,000+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location" class="select2" multiple="multiple">
+                            <option value="tanzania">Tanzania</option>
+                            <option value="east-africa">East Africa</option>
+                            <option value="africa">Rest of Africa</option>
+                            <option value="europe">Europe</option>
+                            <option value="north-america">North America</option>
+                            <option value="asia">Asia</option>
+                        </select>
+                    </div>
+                    <div class="filter-group search-group">
+                        <label for="investorSearch">Search Investors</label>
+                        <div class="search-box">
+                            <input type="text" id="investorSearch" placeholder="Search by name, company, or keywords...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <button id="applyFilters" class="btn btn-primary">Apply Filters</button>
+                    <button id="resetFilters" class="btn btn-text">Reset</button>
+                </div>
+
+                <div class="investors-grid" id="investorsGrid">
+                    <!-- Investors will be loaded here by JavaScript -->
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                        <p>Loading investors...</p>
+                    </div>
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <!-- Pagination will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Investor Map -->
+        <section class="investor-map-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Investor Network</h2>
+                    <p>Explore our global network of investors ready to support innovative startups</p>
+                </div>
+                <div class="map-container" data-aos="fade-up" data-aos-delay="100">
+                    <div id="investorMap"></div>
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <span class="legend-icon" style="background-color: #3498db;"></span>
+                            <span>Angel Investors</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon" style="background-color: #2ecc71;"></span>
+                            <span>Venture Capital</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon" style="background-color: #e74c3c;"></span>
+                            <span>Corporate Investors</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-icon" style="background-color: #f39c12;"></span>
+                            <span>Government Funds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>How It Works</h2>
+                    <p>Connect with investors in three simple steps</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Create Your Profile</h3>
+                            <p>Complete your startup profile with all the necessary information that investors look for.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Find & Connect</h3>
+                            <p>Browse our network of investors and connect with those who match your startup's needs.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Pitch & Secure Funding</h3>
+                            <p>Schedule meetings, pitch your idea, and secure the funding to grow your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pitch Your Startup -->
+        <section id="pitch" class="pitch-startup">
+            <div class="container">
+                <div class="pitch-container">
+                    <div class="pitch-content" data-aos="fade-right">
+                        <div class="section-header">
+                            <h2>Ready to Pitch Your Startup?</h2>
+                            <p>Submit your pitch deck and get in front of our network of investors</p>
+                        </div>
+                            
+                        <form id="pitchForm" class="pitch-form">
+                            <input type="hidden" id="targetInvestorId" name="targetInvestorId">
+                            <div class="form-group">
+                                <label for="startupName">Startup Name *</label>
+                                <input type="text" id="startupName" name="startupName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="founderName">Founder/CEO Name *</label>
+                                <input type="text" id="founderName" name="founderName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="website">Website</label>
+                                <input type="url" id="website" name="website" placeholder="https://">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="industry">Industry *</label>
+                                <select id="industry" name="industry" required>
+                                    <option value="">Select Industry</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="healthcare">Healthcare</option>
+                                    <option value="education">Education</option>
+                                    <option value="finance">Finance</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="renewable">Renewable Energy</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="stage">Funding Stage *</label>
+                                <select id="stage" name="stage" required>
+                                    <option value="">Select Funding Stage</option>
+                                    <option value="pre-seed">Pre-seed</option>
+                                    <option value="seed">Seed</option>
+                                    <option value="series-a">Series A</option>
+                                    <option value="series-b">Series B</option>
+                                    <option value="series-c">Series C+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="amount">Funding Amount Sought ($) *</label>
+                                <input type="number" id="amount" name="amount" min="1000" step="1000" required>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="description">Pitch Description *</label>
+                                <textarea id="description" name="description" rows="5" required 
+                                    placeholder="Briefly describe your startup, the problem you're solving, your solution, target market, and business model (max 500 words)"></textarea>
+                                <div class="char-count"><span id="charCount">0</span>/500 words</div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label>Pitch Deck *</label>
+                                <div class="file-upload">
+                                    <input type="file" id="pitchDeck" name="pitchDeck" accept=".pdf,.ppt,.pptx" required>
+                                    <label for="pitchDeck" class="file-upload-label">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span>Upload Pitch Deck (PDF or PPT, max 10MB)</span>
+                                    </label>
+                                    <div id="fileName" class="file-name">No file chosen</div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="additionalInfo">Additional Information</label>
+                                <textarea id="additionalInfo" name="additionalInfo" rows="3" 
+                                    placeholder="Any additional information you'd like to share with potential investors"></textarea>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                                </label>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <button type="submit" class="btn btn-primary btn-block">Submit Pitch</button>
+                            </div>
+                        </form>
+
+                        <div id="matchingResults" class="matching-results" hidden>
+                            <h3>Recommended Investors</h3>
+                            <p class="matching-subtitle">Based on your industry, stage, and funding amount.</p>
+                            <div id="matchingGrid" class="matching-grid"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="pitch-benefits" data-aos="fade-left" data-aos-delay="200">
+                        <h3>Why Pitch With Us?</h3>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Access to 150+ Investors</h4>
+                                <p>Connect with angel investors, VCs, and corporate investors actively looking for promising startups.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Targeted Matching</h4>
+                                <p>Our algorithm matches you with investors who are interested in your industry and funding stage.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Pitch Coaching</h4>
+                                <p>Get expert feedback on your pitch deck and presentation skills before meeting with investors.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Success Stories</h4>
+                                <p>Join the ranks of successful startups that have secured funding through our platform.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pitch-tips">
+                            <h4>Pitch Preparation Tips</h4>
+                            <ul>
+                                <li>Keep your pitch deck concise (10-15 slides max)</li>
+                                <li>Clearly define the problem and your solution</li>
+                                <li>Highlight your unique value proposition</li>
+                                <li>Include market size and growth potential</li>
+                                <li>Showcase your team's expertise</li>
+                                <li>Be clear about how much funding you need and how you'll use it</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="success-stories">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Success Stories</h2>
+                    <p>Startups that successfully secured funding through our platform</p>
+                </div>
+                
+                <div class="stories-slider" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card">
+                        <div class="story-image" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009c2c7e9ef6');">
+                            <div class="story-overlay">
+                                <h3>EcoPack Solutions</h3>
+                                <p>Secured $250,000 in Seed Funding</p>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <p>"Thanks to the UDSM Investor Network, we connected with an angel investor who believed in our vision for sustainable packaging."</p>
+                            <div class="founder-info">
+                                <div class="founder-name">Sarah Johnson</div>
+                                <div class="founder-title">CEO & Co-founder</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image" style="background-image: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d');">
+                            <div class="story-overlay">
+                                <h3>AgriTech Africa</h3>
+                                <p>Raised $500,000 in Series A</p>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <p>"The platform connected us with the right venture capitalists who understood the agricultural technology space in Africa."</p>
+                            <div class="founder-info">
+                                <div class="founder-name">David Omondi</div>
+                                <div class="founder-title">Co-founder & CTO</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71');">
+                            <div class="story-overlay">
+                                <h3>EduTech Plus</h3>
+                                <p>Secured $1.2M in Seed Funding</p>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <p>"The investor matching was spot on. We found investors who were not just providing capital but also valuable mentorship."</p>
+                            <div class="founder-info">
+                                <div class="founder-name">Amina Hassan</div>
+                                <div class="founder-title">Founder & CEO</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="investor-cta">
+            <div class="container">
+                <div class="cta-content" data-aos="zoom-in">
+                    <h2>Ready to Take Your Startup to the Next Level?</h2>
+                    <p>Join our network of innovative startups and connect with investors who are ready to support your vision.</p>
+                    <div class="cta-buttons">
+                        <a href="#pitch" class="btn btn-primary btn-lg">Submit Your Pitch</a>
+                        <a href="#find-investors" class="btn btn-outline btn-lg">Browse Investors</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>UDSM Startup Incubator</h3>
+                <p>Empowering entrepreneurs to transform innovative ideas into successful businesses through mentorship, resources, and support.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="pitch.html">Pitch Your Idea</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="funding.html">Funding</a></li>
+                    <li><a href="stories.html">Success Stories</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="spaces.html">Co-working Spaces</a></li>
+                    <li><a href="legal.html">Legal & IP</a></li>
+                    <li><a href="market-research.html">Market Research</a></li>
+                    <li><a href="investors.html" class="active">Contact Investors</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> UDSM Innovation Hub, Dar es Salaam, Tanzania</p>
+                <p><i class="fas fa-phone-alt"></i> +255 22 241 0511</p>
+                <p><i class="fas fa-envelope"></i> info@udsm-incubator.ac.tz</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 UDSM Startup Incubator. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../js/investors.js"></script>
+</body>
+</html>
