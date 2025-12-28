@@ -1,0 +1,27 @@
+name: Simple CI
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: false  # IMPORTANT!
+      
+      - name: Setup
+        run: echo "? Workflow running without submodules"
+      
+      - name: Verify files
+        run: |
+          echo "Project files:"
+          ls -la
+          echo ""
+          echo "Checking for .gitmodules:"
+          if [ -f ".gitmodules" ]; then
+            echo "? ERROR: .gitmodules found!"
+            exit 1
+          else
+            echo "? No .gitmodules file"
+          fi
