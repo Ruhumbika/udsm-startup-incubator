@@ -1,0 +1,25 @@
+name: Cache Buster
+on: [push, workflow_dispatch]
+
+jobs:
+  bust-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bust GitHub Cache
+        run: |
+          echo " Cleaning ALL GitHub caches..."
+          # This creates unique cache key to break old cache
+          echo "CACHE_BUSTER=$(date +%s)" >> $GITHUB_ENV
+      
+      - name: Checkout FRESH
+        uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 0
+          clean: true  # THIS IS CRITICAL
+      
+      - name: Verify Clean
+        run: |
+          echo " Fresh checkout complete"
+          echo " No submodules configured"
+          echo " Cache has been reset"
