@@ -1,68 +1,22 @@
-# UDSM Startup Incubator Portal
+<p align="center"><img src="assets/readme/cover.svg" alt="UDSM Startup Incubator Portal" width="100%"></p>
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Issues](https://img.shields.io/github/issues/Ruhumbika/udsm-startup-incubator)](https://github.com/Ruhumbika/udsm-startup-incubator/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/Ruhumbika/udsm-startup-incubator)](https://github.com/Ruhumbika/udsm-startup-incubator/stargazers)
+<p align="center"><img alt="HTML + CSS" src="https://img.shields.io/badge/HTML%20%2B%20CSS-142632?style=flat-square&amp;labelColor=142632&amp;color=ffca7b"> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-142632?style=flat-square&amp;labelColor=142632&amp;color=ffca7b"> <img alt="JSON" src="https://img.shields.io/badge/JSON-142632?style=flat-square&amp;labelColor=142632&amp;color=ffca7b"></p>
 
-## 🌟 Overview
-The UDSM Startup Incubator Portal is a digital platform designed to empower University of Dar es Salaam students to transform innovative ideas into successful businesses. This comprehensive solution provides access to resources, mentorship, funding opportunities, and collaborative workspaces.
+[Professional portfolio](https://johnportifolio.rjaybarber.shop)
 
-## 🚀 Features
+An academic team project presenting startup resources for students. I served as project lead and developed the homepage.
 
-### Core Functionalities
-- **Idea Submission & Validation**
-  - Interactive pitch submission forms
-  - Idea validation framework
-  - File upload for business plans and pitch decks
+### My contribution
 
-- **Mentorship Network**
-  - Mentor directory with filtering
-  - Booking system for 1:1 sessions
-  - Progress tracking
+| Area | Contribution |
+| :--- | :--- |
+| Team leadership | Coordinated an academic frontend project. |
+| Frontend development | Developed the homepage. |
+| Collaboration | Worked with the team through a shared Git workflow. |
 
-- **Funding Opportunities**
-  - Grant and investment listings
-  - Application tracking
-  - Funding calculator
+**Scope:** academic frontend prototype.
 
-- **Resource Center**
-  - Workshop calendar
-  - Success stories
-  - Legal and business templates
 
-### Technical Features
-- Responsive design for all devices
-- Secure user authentication
-- Real-time notifications
-- Interactive dashboards
-- Admin panel for content management
+---
 
-## 🛠️ Tech Stack
-
-### Frontend
-- HTML5, CSS3, JavaScript
-- [Framework: e.g., React/Vue.js]
-- [UI Library: e.g., TailwindCSS/Bootstrap]
-
-### Backend
-- [Backend Language: e.g., Node.js/Python]
-- [Framework: e.g., Express/Django]
-- Database: [e.g., MongoDB/PostgreSQL]
-
-### DevOps
-- Version Control: Git & GitHub
-- CI/CD: GitHub Actions
-- Hosting: [e.g., Vercel/Netlify]
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v14+)
-- npm (v6+) or yarn
-- Git
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Ruhumbika/udsm-startup-incubator.git](https://github.com/Ruhumbika/udsm-startup-incubator.git)
-   cd udsm-startup-incubator
+[Ruhumbika Mtumba John](https://github.com/Ruhumbika) · Software Engineer
