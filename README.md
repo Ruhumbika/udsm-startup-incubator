@@ -1,12 +1,12 @@
 # UDSM Startup Incubator Portal
 
-A collaborative academic frontend project for presenting startup resources to University of Dar es Salaam students. Built by Group 18 with separate page assignments and a shared Git workflow.
+An academic team project that brings startup resources, mentorship information and student venture tools into a single frontend portal.
 
-**Focus:** responsive frontend development, reusable JavaScript modules and team collaboration.
+I served as project lead and developed the homepage. The team worked on separate page assignments through a shared Git workflow.
 
 ## Project scope
 
-This repository contains HTML pages, CSS, JavaScript and local JSON datasets. It is a frontend prototype rather than a deployed backend service. The source does not establish a production authentication system, transactional database or live funding platform.
+Frontend prototype built with HTML, CSS, JavaScript and local JSON datasets.
 
 ## Included areas
 
@@ -18,11 +18,11 @@ This repository contains HTML pages, CSS, JavaScript and local JSON datasets. It
 
 ## Contribution context
 
-The project contribution guide records Ruhumbika's lead/homepage assignment alongside the other team members' page assignments. See [CONTRIBUTING.md](CONTRIBUTING.md) for that context; this repository represents collaborative work.
+Page ownership and team responsibilities are recorded in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Stack
 
-HTML, CSS, JavaScript and JSON. GitHub Actions provides repository checks. The checked-in workflow verifies repository files and the absence of `.gitmodules`; it is not an application test suite.
+HTML, CSS, JavaScript and JSON, with GitHub Actions for repository structure checks.
 
 ## Run locally
 
