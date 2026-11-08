@@ -1,28 +1,23 @@
-# UDSM Startup Incubator Portal
+<p align="center"><img src="assets/readme/cover.svg" alt="UDSM Startup Incubator Portal" width="100%"></p>
 
-An academic team project that brings startup resources, mentorship information and student venture tools into a single frontend portal.
+<p align="center"><img alt="HTML + CSS" src="https://img.shields.io/badge/HTML%20%2B%20CSS-142632?style=flat-square&amp;labelColor=142632&amp;color=ffca7b"> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-142632?style=flat-square&amp;labelColor=142632&amp;color=ffca7b"> <img alt="JSON" src="https://img.shields.io/badge/JSON-142632?style=flat-square&amp;labelColor=142632&amp;color=ffca7b"></p>
 
-I served as project lead and developed the homepage. The team worked on separate page assignments through a shared Git workflow.
+[Team contributions](CONTRIBUTING.md) · [Browse the homepage](index.html)
 
-## Project scope
+I served as project lead and developed the homepage for this academic team project. The portal brings student startup resources into a shared frontend, with separate page assignments across the team.
 
-Frontend prototype built with HTML, CSS, JavaScript and local JSON datasets.
+### My contribution
 
-## Included areas
+| Contribution | Scope |
+| :--- | :--- |
+| **My contribution** | Project leadership and homepage development. |
+| **Frontend scope** | Resource pages, filters and shared interactions. |
+| **Team delivery** | Page ownership and a shared Git workflow. |
 
-- Startup idea and pitch submission interfaces.
-- Mentorship and funding information.
-- Investor directory and filtering interfaces.
-- Workshops, research, legal resources, spaces and startup stories.
-- Shared navigation, validation, counters and calculator modules.
+**Scope:** collaborative frontend prototype using local JSON datasets.
 
-## Contribution context
-
-Page ownership and team responsibilities are recorded in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Stack
-
-HTML, CSS, JavaScript and JSON, with GitHub Actions for repository structure checks.
+<details>
+<summary><strong>Developer setup & technical reference</strong></summary>
 
 ## Run locally
 
@@ -47,3 +42,9 @@ Open `http://localhost:8000`. Serving over HTTP allows the pages to load their l
 | [`.github/workflows/`](.github/workflows/) | Repository automation |
 
 The included [LICENSE](LICENSE) applies to the repository.
+
+</details>
+
+---
+
+Built by [Ruhumbika Mtumba John](https://github.com/Ruhumbika) with the Group 18 team · [Engineering portfolio](https://johnportifolio.rjaybarber.shop)
