@@ -1,68 +1,49 @@
 # UDSM Startup Incubator Portal
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Issues](https://img.shields.io/github/issues/Ruhumbika/udsm-startup-incubator)](https://github.com/Ruhumbika/udsm-startup-incubator/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/Ruhumbika/udsm-startup-incubator)](https://github.com/Ruhumbika/udsm-startup-incubator/stargazers)
+A collaborative academic frontend project for presenting startup resources to University of Dar es Salaam students. Built by Group 18 with separate page assignments and a shared Git workflow.
 
-## 🌟 Overview
-The UDSM Startup Incubator Portal is a digital platform designed to empower University of Dar es Salaam students to transform innovative ideas into successful businesses. This comprehensive solution provides access to resources, mentorship, funding opportunities, and collaborative workspaces.
+**Focus:** responsive frontend development, reusable JavaScript modules and team collaboration.
 
-## 🚀 Features
+## Project scope
 
-### Core Functionalities
-- **Idea Submission & Validation**
-  - Interactive pitch submission forms
-  - Idea validation framework
-  - File upload for business plans and pitch decks
+This repository contains HTML pages, CSS, JavaScript and local JSON datasets. It is a frontend prototype rather than a deployed backend service. The source does not establish a production authentication system, transactional database or live funding platform.
 
-- **Mentorship Network**
-  - Mentor directory with filtering
-  - Booking system for 1:1 sessions
-  - Progress tracking
+## Included areas
 
-- **Funding Opportunities**
-  - Grant and investment listings
-  - Application tracking
-  - Funding calculator
+- Startup idea and pitch submission interfaces.
+- Mentorship and funding information.
+- Investor directory and filtering interfaces.
+- Workshops, research, legal resources, spaces and startup stories.
+- Shared navigation, validation, counters and calculator modules.
 
-- **Resource Center**
-  - Workshop calendar
-  - Success stories
-  - Legal and business templates
+## Contribution context
 
-### Technical Features
-- Responsive design for all devices
-- Secure user authentication
-- Real-time notifications
-- Interactive dashboards
-- Admin panel for content management
+The project contribution guide records Ruhumbika's lead/homepage assignment alongside the other team members' page assignments. See [CONTRIBUTING.md](CONTRIBUTING.md) for that context; this repository represents collaborative work.
 
-## 🛠️ Tech Stack
+## Stack
 
-### Frontend
-- HTML5, CSS3, JavaScript
-- [Framework: e.g., React/Vue.js]
-- [UI Library: e.g., TailwindCSS/Bootstrap]
+HTML, CSS, JavaScript and JSON. GitHub Actions provides repository checks. The checked-in workflow verifies repository files and the absence of `.gitmodules`; it is not an application test suite.
 
-### Backend
-- [Backend Language: e.g., Node.js/Python]
-- [Framework: e.g., Express/Django]
-- Database: [e.g., MongoDB/PostgreSQL]
+## Run locally
 
-### DevOps
-- Version Control: Git & GitHub
-- CI/CD: GitHub Actions
-- Hosting: [e.g., Vercel/Netlify]
+```bash
+git clone https://github.com/Ruhumbika/udsm-startup-incubator.git
+cd udsm-startup-incubator
+python3 -m http.server 8000
+```
 
-## 🚀 Getting Started
+Open `http://localhost:8000`. Serving over HTTP allows the pages to load their local JSON and JavaScript resources.
 
-### Prerequisites
-- Node.js (v14+)
-- npm (v6+) or yarn
-- Git
+## Repository guide
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Ruhumbika/udsm-startup-incubator.git](https://github.com/Ruhumbika/udsm-startup-incubator.git)
-   cd udsm-startup-incubator
+| Path | Contents |
+| --- | --- |
+| [`index.html`](index.html) | Homepage |
+| [`pages/`](pages/) | Topic pages |
+| [`styles/`](styles/) | Shared and page-specific styles |
+| [`js/`](js/) | Page behaviour and interactions |
+| [`scripts/`](scripts/) | Shared frontend modules |
+| [`data/`](data/) | Local JSON datasets |
+| [`.github/workflows/`](.github/workflows/) | Repository automation |
+
+The included [LICENSE](LICENSE) applies to the repository.
